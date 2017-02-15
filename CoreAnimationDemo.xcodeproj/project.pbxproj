@@ -12,9 +12,12 @@
 		3F13A09A1E4EDFBD00B1F8BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F13A0981E4EDFBD00B1F8BB /* Main.storyboard */; };
 		3F13A09C1E4EDFBD00B1F8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F13A09B1E4EDFBD00B1F8BB /* Assets.xcassets */; };
 		3F13A09F1E4EDFBD00B1F8BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F13A09D1E4EDFBD00B1F8BB /* LaunchScreen.storyboard */; };
+		3F6E74211E54031E001C9369 /* MaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E74201E54031E001C9369 /* MaskViewController.swift */; };
+		3F6E74231E540AEE001C9369 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E74221E540AEE001C9369 /* FilterViewController.swift */; };
 		3FC648B21E4EF191009C73EB /* ContentRectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */; };
 		3FC648B51E4F162A009C73EB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B41E4F162A009C73EB /* Extension.swift */; };
 		3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B61E4F596B009C73EB /* AnchorViewController.swift */; };
+		3FF8957F1E5306150033AA31 /* HitTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8957E1E5306150033AA31 /* HitTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +28,12 @@
 		3F13A09B1E4EDFBD00B1F8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F13A09E1E4EDFBD00B1F8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F13A0A01E4EDFBD00B1F8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F6E74201E54031E001C9369 /* MaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskViewController.swift; sourceTree = "<group>"; };
+		3F6E74221E540AEE001C9369 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRectViewController.swift; sourceTree = "<group>"; };
 		3FC648B41E4F162A009C73EB /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		3FC648B61E4F596B009C73EB /* AnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
+		3FF8957E1E5306150033AA31 /* HitTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,9 @@
 				3F13A0961E4EDFBD00B1F8BB /* BaseLayerViewController.swift */,
 				3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */,
 				3FC648B61E4F596B009C73EB /* AnchorViewController.swift */,
+				3FF8957E1E5306150033AA31 /* HitTestViewController.swift */,
+				3F6E74201E54031E001C9369 /* MaskViewController.swift */,
+				3F6E74221E540AEE001C9369 /* FilterViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -172,9 +181,12 @@
 			files = (
 				3F13A0971E4EDFBD00B1F8BB /* BaseLayerViewController.swift in Sources */,
 				3FC648B21E4EF191009C73EB /* ContentRectViewController.swift in Sources */,
+				3F6E74231E540AEE001C9369 /* FilterViewController.swift in Sources */,
 				3F13A0951E4EDFBD00B1F8BB /* AppDelegate.swift in Sources */,
 				3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */,
+				3FF8957F1E5306150033AA31 /* HitTestViewController.swift in Sources */,
 				3FC648B51E4F162A009C73EB /* Extension.swift in Sources */,
+				3F6E74211E54031E001C9369 /* MaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,12 @@
 
 import UIKit
 
+/*
+ 旋转后要消除锯齿，可以设置
+ [view].layer.shouldRasterize = true;
+ [view].layer.rasterizationScale = UIScreen.main.scale
+ */
+
 class AnchorViewController: UIViewController {
     
     // 每一小时的弧度是: 每小时所占的份额(1 / 12) * 整圆的弧度(2π)
@@ -19,24 +25,32 @@ class AnchorViewController: UIViewController {
         didSet {
             let angle = AnchorViewController.everyHourAngle * 5
             view5_11.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            view5_11.layer.shouldRasterize = true
+            view5_11.layer.rasterizationScale = UIScreen.main.scale
         }
     }
     @IBOutlet weak var view4_10: UIView! {
         didSet {
             let angle = AnchorViewController.everyHourAngle * 4
             view4_10.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            view4_10.layer.shouldRasterize = true
+            view4_10.layer.rasterizationScale = UIScreen.main.scale
         }
     }
     @IBOutlet weak var view2_8: UIView! {
         didSet {
             let angle = AnchorViewController.everyHourAngle * 2
             view2_8.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            view2_8.layer.shouldRasterize = true
+            view2_8.layer.rasterizationScale = UIScreen.main.scale
         }
     }
     @IBOutlet weak var view1_7: UIView! {
         didSet {
             let angle = AnchorViewController.everyHourAngle
             view1_7.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            view1_7.layer.shouldRasterize = true
+            view1_7.layer.rasterizationScale = UIScreen.main.scale
         }
     }
     @IBOutlet weak var hourView: UIView! {
@@ -73,6 +87,7 @@ class AnchorViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimeView), userInfo: nil, repeats: true)
+        updateTimeView()
     }
     
     func updateTimeView() {
