@@ -21,6 +21,9 @@ class BaseLayerViewController: UIViewController {
     @IBOutlet weak var layerView: UIView!
     @IBOutlet weak var contentsCenterView: UIView!
     
+    @IBOutlet weak var zPositionView: UIView!
+    weak var blueLayer: CALayer!
+    
     @IBOutlet weak var layerDelegateView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,10 @@ class BaseLayerViewController: UIViewController {
         addALayer()
         testContents()
         
+    }
+    
+    deinit {
+        blueLayer.delegate = nil
     }
     
     func addALayer() {
@@ -39,6 +46,7 @@ class BaseLayerViewController: UIViewController {
         // set CALayer's delegate
         blueLayer.delegate = self
         layerDelegateView.layer.addSublayer(blueLayer)
+        self.blueLayer = blueLayer
         
         // redraw
         blueLayer.display()
@@ -58,6 +66,10 @@ class BaseLayerViewController: UIViewController {
             
             contentsCenterView.layer.contents = image.cgImage
         }
+    }
+    @IBAction func changeZPosition(_ sender: UIButton) {
+        let zPosition = zPositionView.layer.zPosition
+        zPositionView.layer.zPosition = zPosition == 0 ? -1 : 0
     }
 }
 
