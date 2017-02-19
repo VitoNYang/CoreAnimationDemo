@@ -37,23 +37,27 @@ class CAShapeLayerViewController: UIViewController {
         
         // create shape layer
         let shapeLayer = CAShapeLayer()
-        shapeLayer.backgroundColor = UIColor.blue.cgColor
+        // 边框颜色
         shapeLayer.strokeColor = UIColor.red.cgColor
+        // 填充颜色
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = 5
+        // 线条结尾处理
         shapeLayer.lineJoin = kCALineJoinRound
+        // 线条拐弯处处理
         shapeLayer.lineCap = kCALineCapRound
         shapeLayer.path = path.cgPath
         // add it to containerView
         containerView.layer.addSublayer(shapeLayer)
         
         let rect = cornerView.bounds
-        let cornerPath = UIBezierPath(roundedRect: rect, byRoundingCorners: [UIRectCorner.topLeft, .topRight, .bottomLeft], cornerRadii: CGSize(width: 150 * 0.5, height: 150 * 0.5))
+        let cornerRadii = 150 * 0.5
+        let cornerPath = UIBezierPath(roundedRect: rect, byRoundingCorners: [UIRectCorner.topLeft, .topRight, .bottomLeft], cornerRadii: CGSize(width: cornerRadii, height: cornerRadii))
         let cornerLayer = CAShapeLayer()
-        cornerLayer.strokeColor = UIColor.red.cgColor
-        cornerLayer.lineWidth = 10
-        cornerLayer.lineJoin = kCALineJoinRound
-        cornerLayer.lineCap = kCALineCapRound
+//        cornerLayer.strokeColor = UIColor.red.cgColor
+//        cornerLayer.lineWidth = 10
+//        cornerLayer.lineJoin = kCALineJoinRound
+//        cornerLayer.lineCap = kCALineCapRound
         cornerLayer.path = cornerPath.cgPath
         cornerView.layer.mask = cornerLayer
 //        cornerLayer.contents = cornerView

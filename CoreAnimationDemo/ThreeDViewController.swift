@@ -122,7 +122,6 @@ class ThreeDViewController: UIViewController {
         let dotProduct = GLKVector3DotProduct(light, normal)
         // set lighting layer opacity
         let shadow = 1 + dotProduct - AMBIENT_LIGHT
-        print(shadow)
         let color = UIColor(white: 0, alpha: CGFloat(shadow))
         layer.backgroundColor = color.cgColor
     }
