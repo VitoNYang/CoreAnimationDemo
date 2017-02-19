@@ -15,3 +15,12 @@ func -(lhs: CGRect, rhs: CGFloat) -> CGRect{
     let newY = (lhs.height - newHeight) / 2
     return CGRect(x: newX, y: newY, width: newWidth, height: newHeight)
 }
+
+extension UIColor {
+    class var randomColor: UIColor {
+        let red = CGFloat(arc4random() % 256) / 255.0
+        let green = CGFloat(arc4random() % 256) / 255.0
+        let blue = CGFloat(arc4random() % 256) / 255.0
+        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+    }
+}
