@@ -23,11 +23,14 @@ guard CommandLine.argc >= 2 else {
 
 // input file
 let inputFile = CommandLine.arguments[1]
+print("inputFile > " + inputFile)
 
 // tile size
 let tileSize = 256
 // output path
-var outputPath = URL(fileURLWithPath: inputFile).deletingPathExtension()
+
+var outputPath = URL(fileURLWithPath: inputFile).deletingPathExtension().absoluteString
+print("outputPath > \(outputPath)")
 
 // load image
 guard let image = NSImage(contentsOfFile: inputFile) else {
@@ -60,8 +63,11 @@ for y in 0..<rows {
             let data = imageRep.representation(using: .JPEG, properties: [:])
             
             // save file
-            let path = outputPath.appendingPathExtension(String(format: "_%02i_%02i.jpg", x, y))
-            try? data?.write(to: path, options: Data.WritingOptions.atomic)
+            let path = outputPath.appending(String(format: "_%02i_%02i.jpg", x, y))
+            print(path)
+            if let url = URL(string: path) {
+                try? data?.write(to: url, options: Data.WritingOptions.atomic)
+            }            
         }
     }
 }
