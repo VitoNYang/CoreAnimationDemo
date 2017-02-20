@@ -396,6 +396,39 @@
             </objects>
             <point key="canvasLocation" x="2191" y="-884"/>
         </scene>
+        <!--Layer View Controller-->
+        <scene sceneID="WmJ-tt-hRz">
+            <objects>
+                <viewController id="9BL-aA-269" customClass="CAEAGLLayerViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SFu-Tw-qEX"/>
+                        <viewControllerLayoutGuide type="bottom" id="zHr-gi-gEN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HuR-aF-4ZL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEV-bE-2Aa">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XEV-bE-2Aa" firstAttribute="leading" secondItem="HuR-aF-4ZL" secondAttribute="leadingMargin" id="XNn-RX-ldG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XEV-bE-2Aa" secondAttribute="trailing" id="b6K-Tu-FEH"/>
+                            <constraint firstItem="XEV-bE-2Aa" firstAttribute="top" secondItem="SFu-Tw-qEX" secondAttribute="bottom" id="ec4-Je-9Lw"/>
+                            <constraint firstItem="zHr-gi-gEN" firstAttribute="top" secondItem="XEV-bE-2Aa" secondAttribute="bottom" id="rhZ-NS-1rW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="glView" destination="XEV-bE-2Aa" id="R4Q-iM-Tlo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0u-P2-t2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="-866"/>
+        </scene>
         <!--Transform Layer View Controller-->
         <scene sceneID="Jt9-QA-vSO">
             <objects>
@@ -1064,6 +1097,39 @@
             </objects>
             <point key="canvasLocation" x="2190" y="-1526"/>
         </scene>
+        <!--Emitter Layer View Controller-->
+        <scene sceneID="jgJ-Ca-HSD">
+            <objects>
+                <viewController id="MDe-KW-JPB" customClass="CAEmitterLayerViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3YB-eI-dfl"/>
+                        <viewControllerLayoutGuide type="bottom" id="6mL-cH-93I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o5c-Jz-YUG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l82-cj-7tI">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" red="0.27794932416094625" green="0.79354007715763564" blue="0.92463499307632446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6mL-cH-93I" firstAttribute="top" secondItem="l82-cj-7tI" secondAttribute="bottom" id="5nF-dP-w5M"/>
+                            <constraint firstItem="l82-cj-7tI" firstAttribute="trailing" secondItem="o5c-Jz-YUG" secondAttribute="trailingMargin" id="Nci-lo-nke"/>
+                            <constraint firstItem="l82-cj-7tI" firstAttribute="leading" secondItem="o5c-Jz-YUG" secondAttribute="leadingMargin" id="cCn-z6-V63"/>
+                            <constraint firstItem="l82-cj-7tI" firstAttribute="top" secondItem="3YB-eI-dfl" secondAttribute="bottom" id="yo5-ME-BfK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="l82-cj-7tI" id="L3M-wC-LhP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2d-iL-ii2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="-1511"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bZ6-US-TYB">
             <objects>
@@ -1391,6 +1457,46 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="ABr-BO-ats" kind="show" id="7g3-bX-v8c"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Qxi-51-xOo" rowHeight="62" style="IBUITableViewCellStyleDefault" id="0gh-Qn-2su">
+                                        <rect key="frame" x="0.0" y="930" width="375" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0gh-Qn-2su" id="fng-le-A99">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="CAEmitterLayer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qxi-51-xOo">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="61"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="MDe-KW-JPB" kind="show" id="G0j-hr-CSM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="NG8-QU-gvi" rowHeight="62" style="IBUITableViewCellStyleDefault" id="6UT-Od-SPw">
+                                        <rect key="frame" x="0.0" y="992" width="375" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6UT-Od-SPw" id="hed-ic-zkO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="CAEAGLLayer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NG8-QU-gvi">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="61"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="9BL-aA-269" kind="show" id="81d-nX-31r"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

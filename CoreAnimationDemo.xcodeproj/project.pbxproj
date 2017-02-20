@@ -52,6 +52,8 @@
 		3FA434831E5A916F004898F8 /* 04_05_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4346B1E5A916F004898F8 /* 04_05_00.jpg */; };
 		3FA434841E5A916F004898F8 /* 04_01_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4346C1E5A916F004898F8 /* 04_01_02.jpg */; };
 		3FA434851E5A916F004898F8 /* 04_05_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4346D1E5A916F004898F8 /* 04_05_03.jpg */; };
+		3FA434A51E5AD3E0004898F8 /* CAEmitterLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA434A41E5AD3E0004898F8 /* CAEmitterLayerViewController.swift */; };
+		3FA434A71E5AE9F7004898F8 /* CAEAGLLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA434A61E5AE9F7004898F8 /* CAEAGLLayerViewController.swift */; };
 		3FC648B21E4EF191009C73EB /* ContentRectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */; };
 		3FC648B51E4F162A009C73EB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B41E4F162A009C73EB /* Extension.swift */; };
 		3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B61E4F596B009C73EB /* AnchorViewController.swift */; };
@@ -120,6 +122,8 @@
 		3FA4346B1E5A916F004898F8 /* 04_05_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04_05_00.jpg; sourceTree = "<group>"; };
 		3FA4346C1E5A916F004898F8 /* 04_01_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04_01_02.jpg; sourceTree = "<group>"; };
 		3FA4346D1E5A916F004898F8 /* 04_05_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04_05_03.jpg; sourceTree = "<group>"; };
+		3FA434A41E5AD3E0004898F8 /* CAEmitterLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAEmitterLayerViewController.swift; sourceTree = "<group>"; };
+		3FA434A61E5AE9F7004898F8 /* CAEAGLLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAEAGLLayerViewController.swift; sourceTree = "<group>"; };
 		3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRectViewController.swift; sourceTree = "<group>"; };
 		3FC648B41E4F162A009C73EB /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		3FC648B61E4F596B009C73EB /* AnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 				3F1B02591E59D5D0001DF094 /* CAReplicatorLayerViewController.swift */,
 				3F1B025F1E59E61E001DF094 /* CAScrollLayerViewController.swift */,
 				3F1B026C1E59FA91001DF094 /* CATiledLayerViewController.swift */,
+				3FA434A41E5AD3E0004898F8 /* CAEmitterLayerViewController.swift */,
+				3FA434A61E5AE9F7004898F8 /* CAEAGLLayerViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -465,9 +471,11 @@
 				3F1B02581E59CDC1001DF094 /* VTGradientView.swift in Sources */,
 				3F13A0971E4EDFBD00B1F8BB /* BaseLayerViewController.swift in Sources */,
 				3F7037FF1E5706DF00EC5065 /* CAGradientLayerViewController.swift in Sources */,
+				3FA434A51E5AD3E0004898F8 /* CAEmitterLayerViewController.swift in Sources */,
 				3FC648B21E4EF191009C73EB /* ContentRectViewController.swift in Sources */,
 				3F7DD5821E55AAD400D15B99 /* CAShapeLayerViewController.swift in Sources */,
 				3F6E74231E540AEE001C9369 /* FilterViewController.swift in Sources */,
+				3FA434A71E5AE9F7004898F8 /* CAEAGLLayerViewController.swift in Sources */,
 				3F1B025A1E59D5D0001DF094 /* CAReplicatorLayerViewController.swift in Sources */,
 				3F1B02601E59E61E001DF094 /* CAScrollLayerViewController.swift in Sources */,
 				3F1B025C1E59DA5F001DF094 /* VTReplicatorView.swift in Sources */,
