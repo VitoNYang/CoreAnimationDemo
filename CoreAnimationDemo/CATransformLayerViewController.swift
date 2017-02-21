@@ -12,8 +12,8 @@ class CATransformLayerViewController: UIViewController {
     
     @IBOutlet weak var containerView: UIView!
     
-    let ninetyDegrees = CGFloat(M_PI_2)
-    let fortyDegress = CGFloat(M_PI_4)
+    let ninetyDegrees = CGFloat.pi / 2
+    let fortyDegress = CGFloat.pi / 4
     var isAddCube = false
 
     override func viewDidLoad() {
@@ -88,7 +88,7 @@ class CATransformLayerViewController: UIViewController {
         
         // face 5, 后
         ct = CATransform3DMakeTranslation(0, 0, -halfFaceWidth)
-        ct = CATransform3DRotate(ct, CGFloat(M_PI), 0, 1, 0)
+        ct = CATransform3DRotate(ct, CGFloat.pi, 0, 1, 0)
         face = self.face(with: faceRect, transform: ct)
         cube.addSublayer(face)
         

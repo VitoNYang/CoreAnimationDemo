@@ -70,7 +70,7 @@ class CAEmitterLayerViewController: UIViewController {
         cell.velocityRange = 90
         
         // 发射角度, 这里设置了可以从360度任意位置发射出来
-        cell.emissionRange = CGFloat(M_PI * 2)
+        cell.emissionRange = CGFloat.pi * 2
         
         emitter.emitterCells = [cell]
     }

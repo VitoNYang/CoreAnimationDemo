@@ -26,7 +26,7 @@ class CAShapeLayerViewController: UIViewController {
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 175, y: 100))
         
-        path.addArc(withCenter: CGPoint(x: 150, y: 100), radius: 25, startAngle: 0, endAngle: 2.0 * CGFloat(M_PI), clockwise: true)
+        path.addArc(withCenter: CGPoint(x: 150, y: 100), radius: 25, startAngle: 0, endAngle: 2.0 * CGFloat.pi, clockwise: true)
         path.move(to: CGPoint(x: 150, y: 125))
         path.addLine(to: CGPoint(x: 150, y: 175))
         path.addLine(to: CGPoint(x: 125, y: 225))

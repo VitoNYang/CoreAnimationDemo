@@ -17,7 +17,7 @@ class ThreeDViewController: UIViewController {
     let LIGHT_DIRECTION: (Float, Float, Float) = (0, 1, -0.5)
     let AMBIENT_LIGHT: Float = 0.5
     
-    var angel = CGFloat(-M_PI_4)
+    var angel = -CGFloat.pi / 4
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,8 +47,8 @@ class ThreeDViewController: UIViewController {
         // 设置container 的sublayer transform, 确保都是同一个灭点
         var perspective = CATransform3DIdentity
         perspective.m34 = -1.0 / 500
-        perspective = CATransform3DRotate(perspective, -(CGFloat)(M_PI_4), 1, 0, 0)
-        perspective = CATransform3DRotate(perspective, -(CGFloat)(M_PI_4), 0, 1, 0)
+        perspective = CATransform3DRotate(perspective, -CGFloat.pi / 4, 1, 0, 0)
+        perspective = CATransform3DRotate(perspective, -CGFloat.pi / 4, 0, 1, 0)
         containerView.layer.sublayerTransform = perspective
         
         // 添加第一面, 前
@@ -59,27 +59,27 @@ class ThreeDViewController: UIViewController {
         // 先平移
         transform = CATransform3DMakeTranslation(100, 0, 0)
         // 再旋转90度
-        transform = CATransform3DRotate(transform, CGFloat(M_PI_2), 0, 1, 0)
+        transform = CATransform3DRotate(transform, CGFloat.pi / 2, 0, 1, 0)
         add(face: 1, with: transform)
         
             // 添加第三面, 后
             transform = CATransform3DMakeTranslation(0, 0, -100)
-        transform = CATransform3DRotate(transform, CGFloat(M_PI), 0, 1, 0)
+        transform = CATransform3DRotate(transform, CGFloat.pi, 0, 1, 0)
         add(face: 2, with: transform)
         
         // 添加第四面, 左
         transform = CATransform3DMakeTranslation(-100, 0, 0)
-        transform = CATransform3DRotate(transform, -(CGFloat)(M_PI_2), 0, 1, 0)
+        transform = CATransform3DRotate(transform, -CGFloat.pi / 2, 0, 1, 0)
         add(face: 3, with: transform)
         
         // 添加第五面, 上
         transform = CATransform3DMakeTranslation(0, -100, 0)
-        transform = CATransform3DRotate(transform, CGFloat(M_PI_2), 1, 0, 0)
+        transform = CATransform3DRotate(transform, CGFloat.pi / 2, 1, 0, 0)
         add(face: 4, with: transform)
         
         // 添加第六面, 下
         transform = CATransform3DMakeTranslation(0, 100, 0)
-        transform = CATransform3DRotate(transform, -(CGFloat)(M_PI_2), 1, 0, 0)
+        transform = CATransform3DRotate(transform, -CGFloat.pi / 2, 1, 0, 0)
         add(face: 5, with: transform)
     }
     

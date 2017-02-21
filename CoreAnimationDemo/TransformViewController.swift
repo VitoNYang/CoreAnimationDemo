@@ -80,13 +80,13 @@ class TransformViewController: UIViewController {
         switch sender.tag {
         case 1:
             print("x")
-            transform3D = CATransform3DRotate(transform3D, CGFloat(degreesToRadians(x: Double(value))), 1, 0, 0)
+            transform3D = CATransform3DRotate(transform3D, degreesToRadians(x: CGFloat(value)), 1, 0, 0)
         case 2:
             print("y")
-            transform3D = CATransform3DRotate(transform3D, CGFloat(degreesToRadians(x: Double(value))), 0, 1, 0)
+            transform3D = CATransform3DRotate(transform3D, degreesToRadians(x: CGFloat(value)), 0, 1, 0)
         case 3:
             print("z")
-            transform3D = CATransform3DRotate(transform3D, CGFloat(degreesToRadians(x: Double(value))), 0, 0, 1)
+            transform3D = CATransform3DRotate(transform3D, degreesToRadians(x: CGFloat(value)), 0, 0, 1)
         default:
             break
         }
@@ -96,6 +96,6 @@ class TransformViewController: UIViewController {
 }
 
 // 角度转弧度
-func degreesToRadians(x: Double) -> Double{
-    return x * M_PI / 180.0
+func degreesToRadians(x: CGFloat) -> CGFloat{
+    return x * CGFloat.pi / 180.0
 }

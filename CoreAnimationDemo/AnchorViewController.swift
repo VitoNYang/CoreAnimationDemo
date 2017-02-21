@@ -17,14 +17,14 @@ import UIKit
 class AnchorViewController: UIViewController {
     
     // 每一小时的弧度是: 每小时所占的份额(1 / 12) * 整圆的弧度(2π)
-    static let everyHourAngle = (1.0 / 12.0) * 2.0 * M_PI
+    static let everyHourAngle = (1.0 / 12.0) * 2.0 * CGFloat.pi
     
     weak var timer: Timer?
 
     @IBOutlet weak var view5_11: UIView! {
         didSet {
             let angle = AnchorViewController.everyHourAngle * 5
-            view5_11.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            view5_11.transform = CGAffineTransform(rotationAngle: angle)
             view5_11.layer.shouldRasterize = true
             view5_11.layer.rasterizationScale = UIScreen.main.scale
         }
@@ -32,7 +32,7 @@ class AnchorViewController: UIViewController {
     @IBOutlet weak var view4_10: UIView! {
         didSet {
             let angle = AnchorViewController.everyHourAngle * 4
-            view4_10.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            view4_10.transform = CGAffineTransform(rotationAngle: angle)
             view4_10.layer.shouldRasterize = true
             view4_10.layer.rasterizationScale = UIScreen.main.scale
         }
@@ -40,7 +40,7 @@ class AnchorViewController: UIViewController {
     @IBOutlet weak var view2_8: UIView! {
         didSet {
             let angle = AnchorViewController.everyHourAngle * 2
-            view2_8.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            view2_8.transform = CGAffineTransform(rotationAngle: angle)
             view2_8.layer.shouldRasterize = true
             view2_8.layer.rasterizationScale = UIScreen.main.scale
         }
@@ -48,7 +48,7 @@ class AnchorViewController: UIViewController {
     @IBOutlet weak var view1_7: UIView! {
         didSet {
             let angle = AnchorViewController.everyHourAngle
-            view1_7.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            view1_7.transform = CGAffineTransform(rotationAngle: angle)
             view1_7.layer.shouldRasterize = true
             view1_7.layer.rasterizationScale = UIScreen.main.scale
         }
@@ -104,17 +104,17 @@ class AnchorViewController: UIViewController {
             /*
              小时分成12份, 当前小时的弧度是 hour / 12 + minute / 60.0 * 每小时所占的弧度
              */
-            let hourAngle = 2.0 * M_PI * Double(hour) / 12.0 + Double(minute) / 60.0 * AnchorViewController.everyHourAngle
-            hourView.transform = CGAffineTransform(rotationAngle: CGFloat(hourAngle))
+            let hourAngle = 2.0 * CGFloat.pi * CGFloat(hour) / 12.0 + CGFloat(minute) / 60.0 * AnchorViewController.everyHourAngle
+            hourView.transform = CGAffineTransform(rotationAngle: hourAngle)
             
             /*
              分钟分成60份, 当前分钟的弧度是 minute / 60
              */
-            let minuteAngle = 2.0 * M_PI * Double(minute) / 60.0
-            minuteView.transform = CGAffineTransform(rotationAngle: CGFloat(minuteAngle))
+            let minuteAngle = 2.0 * CGFloat.pi * CGFloat(minute) / 60.0
+            minuteView.transform = CGAffineTransform(rotationAngle: minuteAngle)
             
-            let secondAngle = 2.0 * M_PI * Double(second) / 60.0
-            secondView.transform = CGAffineTransform(rotationAngle: CGFloat(secondAngle))
+            let secondAngle = 2.0 * CGFloat.pi * CGFloat(second) / 60.0
+            secondView.transform = CGAffineTransform(rotationAngle: secondAngle)
 
         }
     }

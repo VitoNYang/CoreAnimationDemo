@@ -28,7 +28,7 @@ class CAReplicatorLayerViewController: UIViewController {
         
         var transform = CATransform3DIdentity
         transform = CATransform3DTranslate(transform, 0, 200, 0)
-        transform = CATransform3DRotate(transform, CGFloat(M_PI / 5.0), 0, 0, 1)
+        transform = CATransform3DRotate(transform, CGFloat.pi / 5.0, 0, 0, 1)
         transform = CATransform3DTranslate(transform, 0, -200, 0)
         replicatorLayer.instanceTransform = transform
         
