@@ -57,6 +57,8 @@
 		3FC648B21E4EF191009C73EB /* ContentRectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */; };
 		3FC648B51E4F162A009C73EB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B41E4F162A009C73EB /* Extension.swift */; };
 		3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B61E4F596B009C73EB /* AnchorViewController.swift */; };
+		3FD073CB1E5C375700882E58 /* AVPlayerLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */; };
+		3FD073CF1E5C4EF300882E58 /* Missile.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3FD073CE1E5C4EF300882E58 /* Missile.mov */; };
 		3FF8957F1E5306150033AA31 /* HitTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8957E1E5306150033AA31 /* HitTestViewController.swift */; };
 		5DDCB9DC141031F0BB28164A /* Pods_CoreAnimationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1279D637ABD49C11215148D /* Pods_CoreAnimationDemo.framework */; };
 /* End PBXBuildFile section */
@@ -127,6 +129,8 @@
 		3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRectViewController.swift; sourceTree = "<group>"; };
 		3FC648B41E4F162A009C73EB /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		3FC648B61E4F596B009C73EB /* AnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
+		3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerLayerViewController.swift; sourceTree = "<group>"; };
+		3FD073CE1E5C4EF300882E58 /* Missile.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Missile.mov; sourceTree = "<group>"; };
 		3FF8957E1E5306150033AA31 /* HitTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitTestViewController.swift; sourceTree = "<group>"; };
 		9DC3496FE6C7F823E16379E9 /* Pods-CoreAnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAnimationDemo/Pods-CoreAnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E1279D637ABD49C11215148D /* Pods_CoreAnimationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreAnimationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +208,7 @@
 				3F1B026C1E59FA91001DF094 /* CATiledLayerViewController.swift */,
 				3FA434A41E5AD3E0004898F8 /* CAEmitterLayerViewController.swift */,
 				3FA434A61E5AE9F7004898F8 /* CAEAGLLayerViewController.swift */,
+				3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 		3F13A0A71E4EDFDB00B1F8BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3FD073CE1E5C4EF300882E58 /* Missile.mov */,
 				3F2DBE4D1E5A03920080D884 /* Image */,
 				3F13A0981E4EDFBD00B1F8BB /* Main.storyboard */,
 				3F13A09B1E4EDFBD00B1F8BB /* Assets.xcassets */,
@@ -384,6 +390,7 @@
 				3FA434811E5A916F004898F8 /* 04_03_03.jpg in Resources */,
 				3FA4347E1E5A916F004898F8 /* 04_04_03.jpg in Resources */,
 				3FA4347A1E5A916F004898F8 /* 04_02_01.jpg in Resources */,
+				3FD073CF1E5C4EF300882E58 /* Missile.mov in Resources */,
 				3FA434701E5A916F004898F8 /* 04_00_01.jpg in Resources */,
 				3FA434741E5A916F004898F8 /* 04_00_00.jpg in Resources */,
 				3FA434801E5A916F004898F8 /* 04_00_03.jpg in Resources */,
@@ -470,6 +477,7 @@
 				3F7DD57E1E55548700D15B99 /* TransformViewController.swift in Sources */,
 				3F1B02581E59CDC1001DF094 /* VTGradientView.swift in Sources */,
 				3F13A0971E4EDFBD00B1F8BB /* BaseLayerViewController.swift in Sources */,
+				3FD073CB1E5C375700882E58 /* AVPlayerLayerViewController.swift in Sources */,
 				3F7037FF1E5706DF00EC5065 /* CAGradientLayerViewController.swift in Sources */,
 				3FA434A51E5AD3E0004898F8 /* CAEmitterLayerViewController.swift in Sources */,
 				3FC648B21E4EF191009C73EB /* ContentRectViewController.swift in Sources */,
