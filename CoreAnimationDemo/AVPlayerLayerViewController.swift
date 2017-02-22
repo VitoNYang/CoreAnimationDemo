@@ -26,6 +26,18 @@ class AVPlayerLayerViewController: UIViewController {
         // create player and player layer
         let player = AVPlayer(url: url)
         let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        
+        var transform3D = CATransform3DIdentity
+        transform3D.m34 = -1 / 500
+        transform3D = CATransform3DRotate(transform3D, .pi / 4, 1, 1, 0)
+        playerLayer.transform = transform3D
+        
+        playerLayer.cornerRadius = 20
+        playerLayer.masksToBounds = true
+        playerLayer.borderWidth = 2
+        playerLayer.borderColor = UIColor.red.cgColor
+        
         self.view.layer.addSublayer(playerLayer)
         self.playerLayer = playerLayer
         return player
@@ -37,8 +49,8 @@ class AVPlayerLayerViewController: UIViewController {
         super.viewDidAppear(animated)
         
         
-        playerLayer?.frame = view.bounds
         player?.play()
+        playerLayer?.frame = view.bounds
     }
     
     override func viewWillDisappear(_ animated: Bool) {

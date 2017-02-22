@@ -30,11 +30,17 @@ class BaseLayerViewController: UIViewController {
         
         addALayer()
         testContents()
-        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeColor))
+        view.addGestureRecognizer(tapRecognizer)
+
     }
     
     deinit {
         blueLayer.delegate = nil
+    }
+    
+    func changeColor() {
+        view.layer.backgroundColor = UIColor.randomColor.cgColor
     }
     
     func addALayer() {
