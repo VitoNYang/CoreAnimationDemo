@@ -40,7 +40,8 @@ class BaseLayerViewController: UIViewController {
     }
     
     func changeColor() {
-        view.layer.backgroundColor = UIColor.randomColor.cgColor
+        blueLayer.backgroundColor = UIColor.randomColor.cgColor
+        blueLayer.cornerRadius = CGFloat(arc4random() % UInt32(min(blueLayer.bounds.width, blueLayer.bounds.height) / 2))
     }
     
     func addALayer() {

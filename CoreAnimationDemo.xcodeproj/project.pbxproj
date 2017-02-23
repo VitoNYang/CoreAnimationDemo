@@ -19,6 +19,7 @@
 		3F1B02601E59E61E001DF094 /* CAScrollLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B025F1E59E61E001DF094 /* CAScrollLayerViewController.swift */; };
 		3F1B02681E59EAFB001DF094 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B02671E59EAFB001DF094 /* main.swift */; };
 		3F1B026D1E59FA91001DF094 /* CATiledLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B026C1E59FA91001DF094 /* CATiledLayerViewController.swift */; };
+		3F6169FB1E5EF24600FBE145 /* BaseAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6169FA1E5EF24600FBE145 /* BaseAnimationViewController.swift */; };
 		3F6E74211E54031E001C9369 /* MaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E74201E54031E001C9369 /* MaskViewController.swift */; };
 		3F6E74231E540AEE001C9369 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E74221E540AEE001C9369 /* FilterViewController.swift */; };
 		3F7037F81E56E45800EC5065 /* CATextLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7037F71E56E45800EC5065 /* CATextLayerViewController.swift */; };
@@ -91,6 +92,7 @@
 		3F1B02651E59EAFB001DF094 /* TileCutter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TileCutter; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1B02671E59EAFB001DF094 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3F1B026C1E59FA91001DF094 /* CATiledLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATiledLayerViewController.swift; sourceTree = "<group>"; };
+		3F6169FA1E5EF24600FBE145 /* BaseAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnimationViewController.swift; sourceTree = "<group>"; };
 		3F6E74201E54031E001C9369 /* MaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskViewController.swift; sourceTree = "<group>"; };
 		3F6E74221E540AEE001C9369 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		3F7037F71E56E45800EC5065 /* CATextLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATextLayerViewController.swift; sourceTree = "<group>"; };
@@ -191,24 +193,8 @@
 		3F13A0A61E4EDFC900B1F8BB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3F13A0961E4EDFBD00B1F8BB /* BaseLayerViewController.swift */,
-				3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */,
-				3FC648B61E4F596B009C73EB /* AnchorViewController.swift */,
-				3FF8957E1E5306150033AA31 /* HitTestViewController.swift */,
-				3F6E74201E54031E001C9369 /* MaskViewController.swift */,
-				3F6E74221E540AEE001C9369 /* FilterViewController.swift */,
-				3F7DD57F1E5585C000D15B99 /* ThreeDViewController.swift */,
-				3F7DD5811E55AAD400D15B99 /* CAShapeLayerViewController.swift */,
-				3F7037F71E56E45800EC5065 /* CATextLayerViewController.swift */,
-				3F7DD57D1E55548700D15B99 /* TransformViewController.swift */,
-				3F7037FC1E56F84D00EC5065 /* CATransformLayerViewController.swift */,
-				3F7037FE1E5706DF00EC5065 /* CAGradientLayerViewController.swift */,
-				3F1B02591E59D5D0001DF094 /* CAReplicatorLayerViewController.swift */,
-				3F1B025F1E59E61E001DF094 /* CAScrollLayerViewController.swift */,
-				3F1B026C1E59FA91001DF094 /* CATiledLayerViewController.swift */,
-				3FA434A41E5AD3E0004898F8 /* CAEmitterLayerViewController.swift */,
-				3FA434A61E5AE9F7004898F8 /* CAEAGLLayerViewController.swift */,
-				3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */,
+				3F6169F81E5EF20200FBE145 /* Basic */,
+				3F6169F91E5EF21900FBE145 /* Animation */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -263,6 +249,39 @@
 				3FA4346D1E5A916F004898F8 /* 04_05_03.jpg */,
 			);
 			name = Image;
+			sourceTree = "<group>";
+		};
+		3F6169F81E5EF20200FBE145 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				3F13A0961E4EDFBD00B1F8BB /* BaseLayerViewController.swift */,
+				3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */,
+				3FC648B61E4F596B009C73EB /* AnchorViewController.swift */,
+				3FF8957E1E5306150033AA31 /* HitTestViewController.swift */,
+				3F6E74201E54031E001C9369 /* MaskViewController.swift */,
+				3F6E74221E540AEE001C9369 /* FilterViewController.swift */,
+				3F7DD57F1E5585C000D15B99 /* ThreeDViewController.swift */,
+				3F7DD5811E55AAD400D15B99 /* CAShapeLayerViewController.swift */,
+				3F7037F71E56E45800EC5065 /* CATextLayerViewController.swift */,
+				3F7DD57D1E55548700D15B99 /* TransformViewController.swift */,
+				3F7037FC1E56F84D00EC5065 /* CATransformLayerViewController.swift */,
+				3F7037FE1E5706DF00EC5065 /* CAGradientLayerViewController.swift */,
+				3F1B02591E59D5D0001DF094 /* CAReplicatorLayerViewController.swift */,
+				3F1B025F1E59E61E001DF094 /* CAScrollLayerViewController.swift */,
+				3F1B026C1E59FA91001DF094 /* CATiledLayerViewController.swift */,
+				3FA434A41E5AD3E0004898F8 /* CAEmitterLayerViewController.swift */,
+				3FA434A61E5AE9F7004898F8 /* CAEAGLLayerViewController.swift */,
+				3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */,
+			);
+			name = Basic;
+			sourceTree = "<group>";
+		};
+		3F6169F91E5EF21900FBE145 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				3F6169FA1E5EF24600FBE145 /* BaseAnimationViewController.swift */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 		3F7037F91E56F10500EC5065 /* View */ = {
@@ -489,6 +508,7 @@
 				3F1B025C1E59DA5F001DF094 /* VTReplicatorView.swift in Sources */,
 				3F13A0951E4EDFBD00B1F8BB /* AppDelegate.swift in Sources */,
 				3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */,
+				3F6169FB1E5EF24600FBE145 /* BaseAnimationViewController.swift in Sources */,
 				3F1B026D1E59FA91001DF094 /* CATiledLayerViewController.swift in Sources */,
 				3FF8957F1E5306150033AA31 /* HitTestViewController.swift in Sources */,
 				3F1B025E1E59E404001DF094 /* VTScrollView.swift in Sources */,
