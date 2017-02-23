@@ -496,27 +496,34 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obN-MK-Cfx">
                                 <rect key="frame" x="16" y="233" width="343" height="200"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqK-Eb-cUC">
-                                        <rect key="frame" x="148" y="162" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="IqK-Eb-cUC" secondAttribute="bottom" constant="8" id="00t-Zd-jwy"/>
                                     <constraint firstAttribute="height" constant="200" id="qVj-rr-FCa"/>
-                                    <constraint firstItem="IqK-Eb-cUC" firstAttribute="centerX" secondItem="obN-MK-Cfx" secondAttribute="centerX" id="r9V-5G-2Qi"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqK-Eb-cUC">
+                                <rect key="frame" x="164" y="443" width="46" height="30"/>
+                                <size key="titleShadowOffset" width="1" height="2"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animationAction:" destination="zz7-iW-eUy" eventType="touchUpInside" id="b9A-xQ-5Su"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="obN-MK-Cfx" firstAttribute="centerY" secondItem="Usf-UB-uV5" secondAttribute="centerY" id="4du-24-0fd"/>
+                            <constraint firstItem="IqK-Eb-cUC" firstAttribute="centerX" secondItem="Usf-UB-uV5" secondAttribute="centerX" id="ANi-sh-7ZZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="obN-MK-Cfx" secondAttribute="trailing" id="TOF-uC-EV9"/>
                             <constraint firstItem="obN-MK-Cfx" firstAttribute="leading" secondItem="Usf-UB-uV5" secondAttribute="leadingMargin" id="dE5-W9-Red"/>
+                            <constraint firstItem="IqK-Eb-cUC" firstAttribute="top" secondItem="obN-MK-Cfx" secondAttribute="bottom" constant="10" id="eDX-U7-5sG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="obN-MK-Cfx" id="Rvy-mx-Fdp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmH-Pk-e8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

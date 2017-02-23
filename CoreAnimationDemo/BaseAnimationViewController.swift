@@ -9,27 +9,32 @@
 import UIKit
 
 class BaseAnimationViewController: UIViewController {
+    
+    @IBOutlet weak var animationView: UIView!
+    
+    var animationLayer: CALayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if animationLayer == nil {
+            animationLayer = CALayer()
+            animationLayer?.frame = animationView.bounds
+            animationView.layer.addSublayer(animationLayer!)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func animationAction(_ sender: UIButton) {
+        CATransaction.begin()
+//        CATransaction.setAnimationDuration(1.0)
+        animationLayer?.backgroundColor = UIColor.randomColor.cgColor
+        animationLayer?.cornerRadius = CGFloat(arc4random() % UInt32(min(animationView.bounds.width, animationView.bounds.height))) / 2
+        CATransaction.commit()
     }
-    */
-
 }
