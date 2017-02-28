@@ -31,15 +31,16 @@ class CAEmitterLayerViewController: UIViewController {
         // 创建发射器
         let emitter = CAEmitterLayer()
         emitter.frame = containerView.bounds
+        emitter.drawsAsynchronously = true
         containerView.layer.addSublayer(emitter)
         
         // 配置发射器
         /*
          renderMode : 混合模式
-             kCAEmitterLayerUnordered
-             kCAEmitterLayerOldestFirst
-             kCAEmitterLayerOldestLast
-             kCAEmitterLayerBackToFront
+             kCAEmitterLayerUnordered 无序 (默认)
+             kCAEmitterLayerOldestFirst 旧粒子优先
+             kCAEmitterLayerOldestLast  新粒子优先
+             kCAEmitterLayerBackToFront 按z轴位置从后至前
              kCAEmitterLayerAdditive 重叠
          */
         
