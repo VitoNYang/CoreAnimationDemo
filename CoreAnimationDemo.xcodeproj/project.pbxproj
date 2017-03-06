@@ -27,6 +27,10 @@
 		3F7DD57E1E55548700D15B99 /* TransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DD57D1E55548700D15B99 /* TransformViewController.swift */; };
 		3F7DD5801E5585C000D15B99 /* ThreeDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DD57F1E5585C000D15B99 /* ThreeDViewController.swift */; };
 		3F7DD5821E55AAD400D15B99 /* CAShapeLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DD5811E55AAD400D15B99 /* CAShapeLayerViewController.swift */; };
+		3F84FEB11E6D081500C220EA /* CATransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F84FEB01E6D081500C220EA /* CATransitionViewController.swift */; };
+		3F84FEB31E6D186A00C220EA /* CATransitionTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F84FEB21E6D186A00C220EA /* CATransitionTabBarController.swift */; };
+		3F84FEB51E6D1DAA00C220EA /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F84FEB41E6D1DAA00C220EA /* Util.swift */; };
+		3F84FEB81E6D508000C220EA /* StopAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F84FEB71E6D508000C220EA /* StopAnimationViewController.swift */; };
 		3F8677861E6014080076F0AB /* PresentationLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8677851E6014080076F0AB /* PresentationLayerViewController.swift */; };
 		3F8677881E6021910076F0AB /* CAAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8677871E6021910076F0AB /* CAAnimationViewController.swift */; };
 		3F86778A1E60413F0076F0AB /* CAKeyframeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8677891E60413F0076F0AB /* CAKeyframeAnimationViewController.swift */; };
@@ -105,6 +109,10 @@
 		3F7DD57D1E55548700D15B99 /* TransformViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformViewController.swift; sourceTree = "<group>"; };
 		3F7DD57F1E5585C000D15B99 /* ThreeDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeDViewController.swift; sourceTree = "<group>"; };
 		3F7DD5811E55AAD400D15B99 /* CAShapeLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAShapeLayerViewController.swift; sourceTree = "<group>"; };
+		3F84FEB01E6D081500C220EA /* CATransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATransitionViewController.swift; sourceTree = "<group>"; };
+		3F84FEB21E6D186A00C220EA /* CATransitionTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATransitionTabBarController.swift; sourceTree = "<group>"; };
+		3F84FEB41E6D1DAA00C220EA /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		3F84FEB71E6D508000C220EA /* StopAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopAnimationViewController.swift; sourceTree = "<group>"; };
 		3F8677851E6014080076F0AB /* PresentationLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationLayerViewController.swift; sourceTree = "<group>"; };
 		3F8677871E6021910076F0AB /* CAAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAnimationViewController.swift; sourceTree = "<group>"; };
 		3F8677891E60413F0076F0AB /* CAKeyframeAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAKeyframeAnimationViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +209,7 @@
 			children = (
 				3F6169F81E5EF20200FBE145 /* Basic */,
 				3F6169F91E5EF21900FBE145 /* Animation */,
+				3F84FEB61E6D1DB000C220EA /* Util */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -289,6 +298,9 @@
 				3F8677851E6014080076F0AB /* PresentationLayerViewController.swift */,
 				3F8677871E6021910076F0AB /* CAAnimationViewController.swift */,
 				3F8677891E60413F0076F0AB /* CAKeyframeAnimationViewController.swift */,
+				3F84FEB01E6D081500C220EA /* CATransitionViewController.swift */,
+				3F84FEB21E6D186A00C220EA /* CATransitionTabBarController.swift */,
+				3F84FEB71E6D508000C220EA /* StopAnimationViewController.swift */,
 			);
 			name = Animation;
 			sourceTree = "<group>";
@@ -302,6 +314,14 @@
 				3F1B025D1E59E403001DF094 /* VTScrollView.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		3F84FEB61E6D1DB000C220EA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3F84FEB41E6D1DAA00C220EA /* Util.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		3FC648B31E4F1612009C73EB /* Extension */ = {
@@ -504,8 +524,10 @@
 				3F7DD5801E5585C000D15B99 /* ThreeDViewController.swift in Sources */,
 				3F7DD57E1E55548700D15B99 /* TransformViewController.swift in Sources */,
 				3F1B02581E59CDC1001DF094 /* VTGradientView.swift in Sources */,
+				3F84FEB81E6D508000C220EA /* StopAnimationViewController.swift in Sources */,
 				3F13A0971E4EDFBD00B1F8BB /* BaseLayerViewController.swift in Sources */,
 				3FD073CB1E5C375700882E58 /* AVPlayerLayerViewController.swift in Sources */,
+				3F84FEB11E6D081500C220EA /* CATransitionViewController.swift in Sources */,
 				3F86778A1E60413F0076F0AB /* CAKeyframeAnimationViewController.swift in Sources */,
 				3F7037FF1E5706DF00EC5065 /* CAGradientLayerViewController.swift in Sources */,
 				3FA434A51E5AD3E0004898F8 /* CAEmitterLayerViewController.swift in Sources */,
@@ -526,7 +548,9 @@
 				3F7037FD1E56F84D00EC5065 /* CATransformLayerViewController.swift in Sources */,
 				3FC648B51E4F162A009C73EB /* Extension.swift in Sources */,
 				3F8677861E6014080076F0AB /* PresentationLayerViewController.swift in Sources */,
+				3F84FEB31E6D186A00C220EA /* CATransitionTabBarController.swift in Sources */,
 				3F6E74211E54031E001C9369 /* MaskViewController.swift in Sources */,
+				3F84FEB51E6D1DAA00C220EA /* Util.swift in Sources */,
 				3F7037FB1E56F11E00EC5065 /* VTLabel.swift in Sources */,
 				3F7037F81E56E45800EC5065 /* CATextLayerViewController.swift in Sources */,
 			);
