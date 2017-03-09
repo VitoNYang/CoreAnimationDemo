@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0gn-l4-78H">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Replicator Layer View Controller-->
+        <scene sceneID="hx3-O8-CNi">
+            <objects>
+                <viewController id="0gn-l4-78H" customClass="CAReplicatorLayerViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bzI-dC-RmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="as3-qF-6vJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="903-Gp-y6Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4q-2Y-Iz1">
+                                <rect key="frame" x="16" y="367" width="343" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="aOw-OO-6KU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l67-gY-XMp" customClass="VTReplicatorView" customModule="CoreAnimationDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="64" width="343" height="293"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="03" translatesAutoresizingMaskIntoConstraints="NO" id="Xey-oA-D2A">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="293"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Xey-oA-D2A" secondAttribute="trailing" id="Ufe-dY-zBS"/>
+                                    <constraint firstItem="Xey-oA-D2A" firstAttribute="top" secondItem="l67-gY-XMp" secondAttribute="top" id="XnJ-Sg-heh"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xey-oA-D2A" secondAttribute="bottom" id="djO-Ex-Zh5"/>
+                                    <constraint firstItem="Xey-oA-D2A" firstAttribute="leading" secondItem="l67-gY-XMp" secondAttribute="leading" id="sUT-bX-mHp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P4q-2Y-Iz1" firstAttribute="leading" secondItem="903-Gp-y6Z" secondAttribute="leadingMargin" id="1Iz-PO-u9M"/>
+                            <constraint firstItem="l67-gY-XMp" firstAttribute="leading" secondItem="903-Gp-y6Z" secondAttribute="leadingMargin" id="9YJ-NS-TN9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P4q-2Y-Iz1" secondAttribute="trailing" id="9xF-ZO-ygJ"/>
+                            <constraint firstItem="as3-qF-6vJ" firstAttribute="top" secondItem="P4q-2Y-Iz1" secondAttribute="bottom" id="JgJ-7A-cry"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l67-gY-XMp" secondAttribute="trailing" id="dIv-cQ-4al"/>
+                            <constraint firstItem="P4q-2Y-Iz1" firstAttribute="top" secondItem="l67-gY-XMp" secondAttribute="bottom" constant="10" id="dd8-Gb-Rtx"/>
+                            <constraint firstItem="l67-gY-XMp" firstAttribute="top" secondItem="bzI-dC-RmD" secondAttribute="bottom" id="yAL-DM-3cD"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <connections>
+                        <outlet property="containerView" destination="P4q-2Y-Iz1" id="wlJ-NU-G6S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wd-K3-u5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2190" y="1080"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="03" width="1440" height="900"/>
+    </resources>
+</document>

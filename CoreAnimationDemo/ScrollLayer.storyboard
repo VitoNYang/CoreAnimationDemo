@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qwW-M6-Odt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scroll Layer View Controller-->
+        <scene sceneID="SYi-ng-xVf">
+            <objects>
+                <viewController id="qwW-M6-Odt" customClass="CAScrollLayerViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WC8-xI-G59"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Wn-EV-cym"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vvd-ok-Zf3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMu-4e-Mx0" customClass="VTScrollView" customModule="CoreAnimationDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <subviews>
+                                    <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="center" image="03" translatesAutoresizingMaskIntoConstraints="NO" id="juT-g3-hvH">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="603"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="juT-g3-hvH" firstAttribute="top" secondItem="pMu-4e-Mx0" secondAttribute="top" id="2n7-fC-EIu"/>
+                                    <constraint firstAttribute="trailing" secondItem="juT-g3-hvH" secondAttribute="trailing" id="HFU-e4-rgf"/>
+                                    <constraint firstItem="juT-g3-hvH" firstAttribute="leading" secondItem="pMu-4e-Mx0" secondAttribute="leading" id="dBX-6R-wTr"/>
+                                    <constraint firstAttribute="bottom" secondItem="juT-g3-hvH" secondAttribute="bottom" id="eZP-bQ-JsU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pMu-4e-Mx0" secondAttribute="trailing" id="Kij-3V-eCE"/>
+                            <constraint firstItem="pMu-4e-Mx0" firstAttribute="leading" secondItem="Vvd-ok-Zf3" secondAttribute="leadingMargin" id="OMn-DI-dYz"/>
+                            <constraint firstItem="0Wn-EV-cym" firstAttribute="top" secondItem="pMu-4e-Mx0" secondAttribute="bottom" id="XHl-fO-ob8"/>
+                            <constraint firstItem="pMu-4e-Mx0" firstAttribute="top" secondItem="WC8-xI-G59" secondAttribute="bottom" id="dyl-aq-FtB"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOq-ss-iqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="939"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="03" width="1440" height="900"/>
+    </resources>
+</document>

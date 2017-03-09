@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yOW-wq-WoA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transform Layer View Controller-->
+        <scene sceneID="Jt9-QA-vSO">
+            <objects>
+                <viewController id="yOW-wq-WoA" customClass="CATransformLayerViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WZB-cc-TS7"/>
+                        <viewControllerLayoutGuide type="bottom" id="3oP-MW-lks"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LvO-Wv-ofg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shg-Hc-gw3">
+                                <rect key="frame" x="16" y="407" width="343" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="cDC-UJ-XUP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="shg-Hc-gw3" firstAttribute="leading" secondItem="LvO-Wv-ofg" secondAttribute="leadingMargin" id="aZG-Sa-J9V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="shg-Hc-gw3" secondAttribute="trailing" id="jPk-IT-Hsn"/>
+                            <constraint firstItem="3oP-MW-lks" firstAttribute="top" secondItem="shg-Hc-gw3" secondAttribute="bottom" constant="10" id="kiV-h3-2nh"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <connections>
+                        <outlet property="containerView" destination="shg-Hc-gw3" id="7xb-Mz-qdU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00r-at-Lws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2190" y="-249"/>
+        </scene>
+    </scenes>
+</document>

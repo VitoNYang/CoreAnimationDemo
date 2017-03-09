@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9BL-aA-269">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Layer View Controller-->
+        <scene sceneID="WmJ-tt-hRz">
+            <objects>
+                <viewController id="9BL-aA-269" customClass="CAEAGLLayerViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SFu-Tw-qEX"/>
+                        <viewControllerLayoutGuide type="bottom" id="zHr-gi-gEN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HuR-aF-4ZL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEV-bE-2Aa">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XEV-bE-2Aa" firstAttribute="leading" secondItem="HuR-aF-4ZL" secondAttribute="leadingMargin" id="XNn-RX-ldG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XEV-bE-2Aa" secondAttribute="trailing" id="b6K-Tu-FEH"/>
+                            <constraint firstItem="XEV-bE-2Aa" firstAttribute="top" secondItem="SFu-Tw-qEX" secondAttribute="bottom" id="ec4-Je-9Lw"/>
+                            <constraint firstItem="zHr-gi-gEN" firstAttribute="top" secondItem="XEV-bE-2Aa" secondAttribute="bottom" id="rhZ-NS-1rW"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <connections>
+                        <outlet property="glView" destination="XEV-bE-2Aa" id="R4Q-iM-Tlo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0u-P2-t2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="-866"/>
+        </scene>
+    </scenes>
+</document>

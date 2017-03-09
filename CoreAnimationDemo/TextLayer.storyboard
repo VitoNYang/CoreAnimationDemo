@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5AW-o2-ZCW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text Layer View Controller-->
+        <scene sceneID="2Iq-LZ-BuZ">
+            <objects>
+                <viewController id="5AW-o2-ZCW" customClass="CATextLayerViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PyF-yW-l5t"/>
+                        <viewControllerLayoutGuide type="bottom" id="yii-Wd-Lyk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Dq-yb-Oh9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1F-rV-n8F">
+                                <rect key="frame" x="16" y="233.5" width="343" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="f9e-4b-vbA"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VTLabel Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bk-qf-0cU" customClass="VTLabel" customModule="CoreAnimationDemo" customModuleProvider="target">
+                                <rect key="frame" x="83" y="600.5" width="209.5" height="46.5"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="37"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yii-Wd-Lyk" firstAttribute="top" secondItem="0bk-qf-0cU" secondAttribute="bottom" constant="20" id="QZk-SJ-rXI"/>
+                            <constraint firstItem="0bk-qf-0cU" firstAttribute="centerX" secondItem="4Dq-yb-Oh9" secondAttribute="centerX" id="YcK-WQ-shC"/>
+                            <constraint firstItem="h1F-rV-n8F" firstAttribute="centerY" secondItem="4Dq-yb-Oh9" secondAttribute="centerY" id="aj6-xX-CNn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h1F-rV-n8F" secondAttribute="trailing" id="ban-cf-vq5"/>
+                            <constraint firstItem="h1F-rV-n8F" firstAttribute="leading" secondItem="4Dq-yb-Oh9" secondAttribute="leadingMargin" id="hUP-Oz-8X8"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <connections>
+                        <outlet property="layerView" destination="h1F-rV-n8F" id="1uJ-ab-94Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="11g-S3-2It" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2191" y="-884"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zga-W7-p7z">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Keyframe Animation View Controller-->
+        <scene sceneID="h1f-pf-8fL">
+            <objects>
+                <viewController id="zga-W7-p7z" customClass="CAKeyframeAnimationViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P8U-Vk-Xqi"/>
+                        <viewControllerLayoutGuide type="bottom" id="HWY-vu-3NE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="An4-5L-rJT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inY-mt-wX6">
+                                <rect key="frame" x="16" y="617" width="154" height="30"/>
+                                <state key="normal" title="CAKeyframeAnimation"/>
+                                <connections>
+                                    <action selector="keyframeAnimationAction:" destination="zga-W7-p7z" eventType="touchUpInside" id="p8s-jC-Xss"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9y-vc-POp">
+                                <rect key="frame" x="236" y="617" width="123" height="30"/>
+                                <state key="normal" title="CAAimationGroup"/>
+                                <connections>
+                                    <action selector="animationGroupAction:" destination="zga-W7-p7z" eventType="touchUpInside" id="qFY-dP-GKE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HWY-vu-3NE" firstAttribute="top" secondItem="inY-mt-wX6" secondAttribute="bottom" constant="20" id="ILY-2s-2GF"/>
+                            <constraint firstItem="F9y-vc-POp" firstAttribute="trailing" secondItem="An4-5L-rJT" secondAttribute="trailingMargin" id="apo-dj-6dY"/>
+                            <constraint firstItem="HWY-vu-3NE" firstAttribute="top" secondItem="F9y-vc-POp" secondAttribute="bottom" constant="20" id="jee-ib-5m2"/>
+                            <constraint firstItem="inY-mt-wX6" firstAttribute="leading" secondItem="An4-5L-rJT" secondAttribute="leadingMargin" id="waT-ht-JID"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7EQ-tm-eUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3559" y="-2186"/>
+        </scene>
+    </scenes>
+</document>
