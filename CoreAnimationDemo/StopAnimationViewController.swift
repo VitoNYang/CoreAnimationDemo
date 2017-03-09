@@ -82,12 +82,10 @@ class StopAnimationViewController: UIViewController {
             let animation = CABasicAnimation()
             animation.keyPath = "transform.rotation.y"
             animation.toValue = -CGFloat.pi / 2
-            animation.duration = 2.0
+            animation.duration = 1
             animation.repeatDuration = CFTimeInterval.infinity
             animation.autoreverses = true
-//            animation.beginTime = 1 // 指定动画开始前的延迟时间
-            animation.speed = 1 // 时间的倍数, 单次的动画时间就会变成 duration / speed
-            animation.timeOffset = 1
+
             animationLayer?.add(animation, forKey: nil)
             
         } else {

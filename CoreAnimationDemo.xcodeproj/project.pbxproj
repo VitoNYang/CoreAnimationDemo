@@ -17,6 +17,7 @@
 		3F1B02601E59E61E001DF094 /* CAScrollLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B025F1E59E61E001DF094 /* CAScrollLayerViewController.swift */; };
 		3F1B02681E59EAFB001DF094 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B02671E59EAFB001DF094 /* main.swift */; };
 		3F1B026D1E59FA91001DF094 /* CATiledLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B026C1E59FA91001DF094 /* CATiledLayerViewController.swift */; };
+		3F57C98D1E71399600BDCD3F /* CAMediaTimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57C98C1E71399600BDCD3F /* CAMediaTimingViewController.swift */; };
 		3F6169FB1E5EF24600FBE145 /* BaseAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6169FA1E5EF24600FBE145 /* BaseAnimationViewController.swift */; };
 		3F6E74211E54031E001C9369 /* MaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E74201E54031E001C9369 /* MaskViewController.swift */; };
 		3F6E74231E540AEE001C9369 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E74221E540AEE001C9369 /* FilterViewController.swift */; };
@@ -99,6 +100,7 @@
 		3F1B02651E59EAFB001DF094 /* TileCutter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TileCutter; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1B02671E59EAFB001DF094 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3F1B026C1E59FA91001DF094 /* CATiledLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATiledLayerViewController.swift; sourceTree = "<group>"; };
+		3F57C98C1E71399600BDCD3F /* CAMediaTimingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAMediaTimingViewController.swift; sourceTree = "<group>"; };
 		3F6169FA1E5EF24600FBE145 /* BaseAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnimationViewController.swift; sourceTree = "<group>"; };
 		3F6E74201E54031E001C9369 /* MaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskViewController.swift; sourceTree = "<group>"; };
 		3F6E74221E540AEE001C9369 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 				3F84FEB01E6D081500C220EA /* CATransitionViewController.swift */,
 				3F84FEB21E6D186A00C220EA /* CATransitionTabBarController.swift */,
 				3F84FEB71E6D508000C220EA /* StopAnimationViewController.swift */,
+				3F57C98C1E71399600BDCD3F /* CAMediaTimingViewController.swift */,
 			);
 			name = Animation;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */,
 				3F6169FB1E5EF24600FBE145 /* BaseAnimationViewController.swift in Sources */,
 				3F1B026D1E59FA91001DF094 /* CATiledLayerViewController.swift in Sources */,
+				3F57C98D1E71399600BDCD3F /* CAMediaTimingViewController.swift in Sources */,
 				3FF8957F1E5306150033AA31 /* HitTestViewController.swift in Sources */,
 				3F1B025E1E59E404001DF094 /* VTScrollView.swift in Sources */,
 				3F7037FD1E56F84D00EC5065 /* CATransformLayerViewController.swift in Sources */,
