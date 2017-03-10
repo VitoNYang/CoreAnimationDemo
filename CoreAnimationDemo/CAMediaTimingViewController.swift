@@ -8,6 +8,13 @@
 
 import UIKit
 
+/*
+ 当CAAnimation设置到Layer上面之后，就不能再修改它的属性了
+ 要暂停一个动画，可以设置layer的 speed 为 0， 如果 speed 大于1 动画快进，小于0 则动画倒退
+ 
+ 在 app delegate 中设置window 的 layer 的speed 加速减速可以调试所有动画的速度
+ self.window.layer.speed = 100
+ */
 class CAMediaTimingViewController: UIViewController {
 
     lazy var animationPath: UIBezierPath = {
@@ -87,7 +94,16 @@ class CAMediaTimingViewController: UIViewController {
         animation.timeOffset = CFTimeInterval(timeOffsetSlider.value)
         animation.speed = speedSlider.value
         animation.rotationMode = kCAAnimationRotateAuto
+        animation.beginTime = CACurrentMediaTime() + 3
+        // isRemovedOnCompletion 默认为true, 代表动画执行完毕后就从图层上移除，图形会
+        // 恢复到动画执行前的状态。如果想让图层保持消失动画执行后的状态，那就设置为No，
+        // 不过还要设置fillMode 为kCAFillModeForwards
         animation.isRemovedOnCompletion = false
+        // fillMode 决定当前对象在非active时间段的行为
+        // kCAFillModeRemoved : 这个是默认值，就是当动画开始前和结束后，动画对 layer 没有影响，动画结束后， layer 会恢复到之前的状态
+        // kCAFillModeForwards : 当动画结束后，layer 会一直保持着动画最后的状态
+        // kCAFillModeBackwards : 当动画开始前，你只要把 layer 加入到一个动画中， layer 便立即进入
+        // 动画的初始状态，并等待动画开始
         animation.fillMode = fillMode()
         
         animationLayer?.add(animation, forKey: "slide")

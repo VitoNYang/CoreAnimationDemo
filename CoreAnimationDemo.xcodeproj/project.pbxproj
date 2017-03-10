@@ -42,6 +42,8 @@
 		3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B61E4F596B009C73EB /* AnchorViewController.swift */; };
 		3FD073CB1E5C375700882E58 /* AVPlayerLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */; };
 		3FD073CF1E5C4EF300882E58 /* Missile.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3FD073CE1E5C4EF300882E58 /* Missile.mov */; };
+		3FDE31EF1E729EC300B06137 /* AnimationControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE31EE1E729EC300B06137 /* AnimationControlViewController.swift */; };
+		3FDE31F11E729EF900B06137 /* AnimationControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE31F01E729EF900B06137 /* AnimationControl.storyboard */; };
 		3FE330F71E71B72600215A7F /* BaseLayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE330F61E71B72600215A7F /* BaseLayer.storyboard */; };
 		3FE330F91E71B78200215A7F /* CotentRect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE330F81E71B78200215A7F /* CotentRect.storyboard */; };
 		3FE330FB1E71B7EC00215A7F /* Anchor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE330FA1E71B7EC00215A7F /* Anchor.storyboard */; };
@@ -151,6 +153,8 @@
 		3FC648B61E4F596B009C73EB /* AnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
 		3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerLayerViewController.swift; sourceTree = "<group>"; };
 		3FD073CE1E5C4EF300882E58 /* Missile.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Missile.mov; sourceTree = "<group>"; };
+		3FDE31EE1E729EC300B06137 /* AnimationControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationControlViewController.swift; sourceTree = "<group>"; };
+		3FDE31F01E729EF900B06137 /* AnimationControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnimationControl.storyboard; sourceTree = "<group>"; };
 		3FE330F61E71B72600215A7F /* BaseLayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BaseLayer.storyboard; sourceTree = "<group>"; };
 		3FE330F81E71B78200215A7F /* CotentRect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CotentRect.storyboard; sourceTree = "<group>"; };
 		3FE330FA1E71B7EC00215A7F /* Anchor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Anchor.storyboard; sourceTree = "<group>"; };
@@ -356,6 +360,7 @@
 				3F84FEB21E6D186A00C220EA /* CATransitionTabBarController.swift */,
 				3F84FEB71E6D508000C220EA /* StopAnimationViewController.swift */,
 				3F57C98C1E71399600BDCD3F /* CAMediaTimingViewController.swift */,
+				3FDE31EE1E729EC300B06137 /* AnimationControlViewController.swift */,
 			);
 			name = Animation;
 			sourceTree = "<group>";
@@ -363,6 +368,7 @@
 		3F7037F91E56F10500EC5065 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3FDE31F01E729EF900B06137 /* AnimationControl.storyboard */,
 				3FE331281E71BAFB00215A7F /* MediaTiming.storyboard */,
 				3FE331261E71BADD00215A7F /* StopAnimation.storyboard */,
 				3FE331241E71BAC300215A7F /* Animation.storyboard */,
@@ -539,6 +545,7 @@
 				3FE331171E71B9E300215A7F /* KeyframeAnimation.storyboard in Resources */,
 				3FE3310B1E71B94200215A7F /* TextLayer.storyboard in Resources */,
 				3FE848721E5F3FED007BB042 /* 04_04_03.jpg in Resources */,
+				3FDE31F11E729EF900B06137 /* AnimationControl.storyboard in Resources */,
 				3FE330FD1E71B83200215A7F /* HitTest.storyboard in Resources */,
 				3FE848701E5F3FED007BB042 /* 04_04_01.jpg in Resources */,
 				3FE848631E5F3FED007BB042 /* 04_01_00.jpg in Resources */,
@@ -647,6 +654,7 @@
 				3F1B02601E59E61E001DF094 /* CAScrollLayerViewController.swift in Sources */,
 				3F1B025C1E59DA5F001DF094 /* VTReplicatorView.swift in Sources */,
 				3F13A0951E4EDFBD00B1F8BB /* AppDelegate.swift in Sources */,
+				3FDE31EF1E729EC300B06137 /* AnimationControlViewController.swift in Sources */,
 				3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */,
 				3F6169FB1E5EF24600FBE145 /* BaseAnimationViewController.swift in Sources */,
 				3F1B026D1E59FA91001DF094 /* CATiledLayerViewController.swift in Sources */,
