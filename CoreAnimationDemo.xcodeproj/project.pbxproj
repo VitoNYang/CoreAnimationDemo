@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F105F861E751DF70098EF14 /* CAMediaTimingFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F105F851E751DF70098EF14 /* CAMediaTimingFunctionViewController.swift */; };
+		3F105F881E751E3A0098EF14 /* CAMediaTimingFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F105F871E751E3A0098EF14 /* CAMediaTimingFunction.storyboard */; };
+		3F105F8A1E7536A30098EF14 /* CAMediaTimingFunctionBezierPathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F105F891E7536A30098EF14 /* CAMediaTimingFunctionBezierPathViewController.swift */; };
 		3F13A0951E4EDFBD00B1F8BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F13A0941E4EDFBD00B1F8BB /* AppDelegate.swift */; };
 		3F13A0971E4EDFBD00B1F8BB /* BaseLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F13A0961E4EDFBD00B1F8BB /* BaseLayerViewController.swift */; };
 		3F13A09C1E4EDFBD00B1F8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F13A09B1E4EDFBD00B1F8BB /* Assets.xcassets */; };
@@ -113,6 +116,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F105F851E751DF70098EF14 /* CAMediaTimingFunctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAMediaTimingFunctionViewController.swift; sourceTree = "<group>"; };
+		3F105F871E751E3A0098EF14 /* CAMediaTimingFunction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CAMediaTimingFunction.storyboard; sourceTree = "<group>"; };
+		3F105F891E7536A30098EF14 /* CAMediaTimingFunctionBezierPathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAMediaTimingFunctionBezierPathViewController.swift; sourceTree = "<group>"; };
 		3F13A0911E4EDFBD00B1F8BB /* CoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F13A0941E4EDFBD00B1F8BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F13A0961E4EDFBD00B1F8BB /* BaseLayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLayerViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +236,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F105F8B1E7538ED0098EF14 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3F105F871E751E3A0098EF14 /* CAMediaTimingFunction.storyboard */,
+				3FDE31F01E729EF900B06137 /* AnimationControl.storyboard */,
+				3FE331281E71BAFB00215A7F /* MediaTiming.storyboard */,
+				3FE331261E71BADD00215A7F /* StopAnimation.storyboard */,
+				3FE331241E71BAC300215A7F /* Animation.storyboard */,
+				3FE331221E71BAAE00215A7F /* PresentationLayer.storyboard */,
+				3FE331201E71BA9700215A7F /* BaseAnimation.storyboard */,
+				3FE3311E1E71BA7B00215A7F /* PlayerLayer.storyboard */,
+				3FE3311C1E71BA4800215A7F /* TransitionTabBar.storyboard */,
+				3FE3311A1E71BA2A00215A7F /* Layer.storyboard */,
+				3FE331181E71B9FB00215A7F /* Transition.storyboard */,
+				3FE331161E71B9E300215A7F /* KeyframeAnimation.storyboard */,
+				3FE331141E71B9C800215A7F /* ScrollLayer.storyboard */,
+				3FE331121E71B9B300215A7F /* ReplicatorLayer.storyboard */,
+				3FE331101E71B99C00215A7F /* GradientLayer.storyboard */,
+				3FE3310E1E71B98000215A7F /* TransformLayer.storyboard */,
+				3FE3310C1E71B96900215A7F /* EmitterLayer.storyboard */,
+				3FE3310A1E71B94200215A7F /* TextLayer.storyboard */,
+				3FE331081E71B92E00215A7F /* ShapeLayer.storyboard */,
+				3FE331061E71B91800215A7F /* TiledLayer.storyboard */,
+				3FE331041E71B8DD00215A7F /* Transform.storyboard */,
+				3FE331021E71B8AC00215A7F /* Filter.storyboard */,
+				3FE331001E71B87600215A7F /* Mask.storyboard */,
+				3FE330FE1E71B85700215A7F /* ThreeD.storyboard */,
+				3FE330FC1E71B83200215A7F /* HitTest.storyboard */,
+				3FE330FA1E71B7EC00215A7F /* Anchor.storyboard */,
+				3FE330F81E71B78200215A7F /* CotentRect.storyboard */,
+				3FE330F61E71B72600215A7F /* BaseLayer.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
 		3F13A0881E4EDFBD00B1F8BB = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +402,8 @@
 				3F84FEB71E6D508000C220EA /* StopAnimationViewController.swift */,
 				3F57C98C1E71399600BDCD3F /* CAMediaTimingViewController.swift */,
 				3FDE31EE1E729EC300B06137 /* AnimationControlViewController.swift */,
+				3F105F851E751DF70098EF14 /* CAMediaTimingFunctionViewController.swift */,
+				3F105F891E7536A30098EF14 /* CAMediaTimingFunctionBezierPathViewController.swift */,
 			);
 			name = Animation;
 			sourceTree = "<group>";
@@ -368,33 +411,7 @@
 		3F7037F91E56F10500EC5065 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3FDE31F01E729EF900B06137 /* AnimationControl.storyboard */,
-				3FE331281E71BAFB00215A7F /* MediaTiming.storyboard */,
-				3FE331261E71BADD00215A7F /* StopAnimation.storyboard */,
-				3FE331241E71BAC300215A7F /* Animation.storyboard */,
-				3FE331221E71BAAE00215A7F /* PresentationLayer.storyboard */,
-				3FE331201E71BA9700215A7F /* BaseAnimation.storyboard */,
-				3FE3311E1E71BA7B00215A7F /* PlayerLayer.storyboard */,
-				3FE3311C1E71BA4800215A7F /* TransitionTabBar.storyboard */,
-				3FE3311A1E71BA2A00215A7F /* Layer.storyboard */,
-				3FE331181E71B9FB00215A7F /* Transition.storyboard */,
-				3FE331161E71B9E300215A7F /* KeyframeAnimation.storyboard */,
-				3FE331141E71B9C800215A7F /* ScrollLayer.storyboard */,
-				3FE331121E71B9B300215A7F /* ReplicatorLayer.storyboard */,
-				3FE331101E71B99C00215A7F /* GradientLayer.storyboard */,
-				3FE3310E1E71B98000215A7F /* TransformLayer.storyboard */,
-				3FE3310C1E71B96900215A7F /* EmitterLayer.storyboard */,
-				3FE3310A1E71B94200215A7F /* TextLayer.storyboard */,
-				3FE331081E71B92E00215A7F /* ShapeLayer.storyboard */,
-				3FE331061E71B91800215A7F /* TiledLayer.storyboard */,
-				3FE331041E71B8DD00215A7F /* Transform.storyboard */,
-				3FE331021E71B8AC00215A7F /* Filter.storyboard */,
-				3FE331001E71B87600215A7F /* Mask.storyboard */,
-				3FE330FE1E71B85700215A7F /* ThreeD.storyboard */,
-				3FE330FC1E71B83200215A7F /* HitTest.storyboard */,
-				3FE330FA1E71B7EC00215A7F /* Anchor.storyboard */,
-				3FE330F81E71B78200215A7F /* CotentRect.storyboard */,
-				3FE330F61E71B72600215A7F /* BaseLayer.storyboard */,
+				3F105F8B1E7538ED0098EF14 /* Storyboard */,
 				3F7037FA1E56F11E00EC5065 /* VTLabel.swift */,
 				3F1B02571E59CDC1001DF094 /* VTGradientView.swift */,
 				3F1B025B1E59DA5F001DF094 /* VTReplicatorView.swift */,
@@ -540,6 +557,7 @@
 				3FE848611E5F3FED007BB042 /* 04_00_02.jpg in Resources */,
 				3FE3311F1E71BA7B00215A7F /* PlayerLayer.storyboard in Resources */,
 				3FE331151E71B9C800215A7F /* ScrollLayer.storyboard in Resources */,
+				3F105F881E751E3A0098EF14 /* CAMediaTimingFunction.storyboard in Resources */,
 				3FE8485F1E5F3FED007BB042 /* 04_00_00.jpg in Resources */,
 				3FE848671E5F3FED007BB042 /* 04_02_00.jpg in Resources */,
 				3FE331171E71B9E300215A7F /* KeyframeAnimation.storyboard in Resources */,
@@ -647,6 +665,7 @@
 				3FA434A51E5AD3E0004898F8 /* CAEmitterLayerViewController.swift in Sources */,
 				3FC648B21E4EF191009C73EB /* ContentRectViewController.swift in Sources */,
 				3F7DD5821E55AAD400D15B99 /* CAShapeLayerViewController.swift in Sources */,
+				3F105F861E751DF70098EF14 /* CAMediaTimingFunctionViewController.swift in Sources */,
 				3F6E74231E540AEE001C9369 /* FilterViewController.swift in Sources */,
 				3FA434A71E5AE9F7004898F8 /* CAEAGLLayerViewController.swift in Sources */,
 				3F1B025A1E59D5D0001DF094 /* CAReplicatorLayerViewController.swift in Sources */,
@@ -663,6 +682,7 @@
 				3F1B025E1E59E404001DF094 /* VTScrollView.swift in Sources */,
 				3F7037FD1E56F84D00EC5065 /* CATransformLayerViewController.swift in Sources */,
 				3FC648B51E4F162A009C73EB /* Extension.swift in Sources */,
+				3F105F8A1E7536A30098EF14 /* CAMediaTimingFunctionBezierPathViewController.swift in Sources */,
 				3F8677861E6014080076F0AB /* PresentationLayerViewController.swift in Sources */,
 				3F84FEB31E6D186A00C220EA /* CATransitionTabBarController.swift in Sources */,
 				3F6E74211E54031E001C9369 /* MaskViewController.swift in Sources */,

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nlm-I4-trN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Media Timing Function View Controller-->
+        <scene sceneID="QhZ-rd-zMx">
+            <objects>
+                <viewController id="nlm-I4-trN" customClass="CAMediaTimingFunctionViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nrF-FZ-YPx"/>
+                        <viewControllerLayoutGuide type="bottom" id="iUy-ub-MY7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C9t-A7-nMx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nqI-jm-v3t">
+                                <rect key="frame" x="8" y="72" width="359" height="29"/>
+                                <segments>
+                                    <segment title="Linear"/>
+                                    <segment title="EaseIn"/>
+                                    <segment title="EaseOut"/>
+                                    <segment title="EaseInEaseOut"/>
+                                    <segment title="Default"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nqI-jm-v3t" firstAttribute="centerX" secondItem="C9t-A7-nMx" secondAttribute="centerX" id="J2a-AT-eBK"/>
+                            <constraint firstAttribute="trailing" secondItem="nqI-jm-v3t" secondAttribute="trailing" constant="8" id="RJW-vL-mT0"/>
+                            <constraint firstItem="nqI-jm-v3t" firstAttribute="top" secondItem="nrF-FZ-YPx" secondAttribute="bottom" constant="8" id="ZkO-Ot-aA4"/>
+                            <constraint firstItem="nqI-jm-v3t" firstAttribute="leading" secondItem="C9t-A7-nMx" secondAttribute="leading" constant="8" id="vxk-gG-POY"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="nqI-jm-v3t" id="E2q-2a-Aod"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fvv-rO-qcs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344.8" y="-233.43328335832086"/>
+        </scene>
+    </scenes>
+</document>

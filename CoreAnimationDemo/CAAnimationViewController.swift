@@ -12,7 +12,7 @@ class CAAnimationViewController: UIViewController {
     
     lazy var animationLayer: CALayer = {
         let layer = CALayer()
-        layer.backgroundColor = UIColor.randomColor.cgColor
+        layer.backgroundColor = UIColor.blue.cgColor
         layer.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         return layer
     }()
@@ -41,19 +41,29 @@ class CAAnimationViewController: UIViewController {
     }
     
     @IBAction func changeColor(sender: UIButton) {
-        let animation = CABasicAnimation()
-        animation.keyPath = "backgroundColor"
-        animation.toValue = UIColor.randomColor.cgColor
-        animation.delegate = self
-//        let animation = CAKeyframeAnimation()
+        // MARK: CABasicAnimation
+//        let animation = CABasicAnimation()
 //        animation.keyPath = "backgroundColor"
-//        animation.duration = 2.0
-//        animation.values = [animationLayer.backgroundColor!,
-//                            UIColor.randomColor.cgColor,
-//                            UIColor.randomColor.cgColor,
-//                            UIColor.randomColor.cgColor,
-//                            UIColor.randomColor.cgColor,
-//                            animationLayer.backgroundColor!]
+//        animation.toValue = UIColor.randomColor.cgColor
+//        animation.delegate = self
+        
+        // MARK: CAKeyframeAnimation
+        let animation = CAKeyframeAnimation()
+        animation.keyPath = "backgroundColor"
+        animation.duration = 2.0
+        animation.values = [
+                            UIColor.blue.cgColor,
+                            UIColor.red.cgColor,
+                            UIColor.green.cgColor,
+                            UIColor.blue.cgColor
+                            ]
+        
+        let fn = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+        // timingFunctions 的个数 = values 的个数 - 1
+        // 因为是两个值之前切换的timingFunction
+        animation.timingFunctions = [fn, fn, fn]
+        
+        // add animation
         animationLayer.add(animation, forKey: nil)
     }
 
