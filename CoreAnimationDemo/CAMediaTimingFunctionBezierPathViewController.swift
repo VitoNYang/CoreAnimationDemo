@@ -13,6 +13,29 @@ class CAMediaTimingFunctionBezierPathViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var bezierPathView: BezierPathView!
     
+    @IBOutlet weak var cp1XTF: UITextField! {
+        didSet {
+            cp1XTF.addTarget(self, action: #selector(valueDidChange(_:)), for: .editingChanged)
+        }
+    }
+    @IBOutlet weak var cp1YTF: UITextField! {
+        didSet {
+            cp1YTF.addTarget(self, action: #selector(valueDidChange(_:)), for: .editingChanged)
+        }
+    }
+    @IBOutlet weak var cp2XTF: UITextField! {
+        didSet {
+            cp2XTF.addTarget(self, action: #selector(valueDidChange(_:)), for: .editingChanged)
+        }
+    }
+    @IBOutlet weak var cp2YTF: UITextField! {
+        didSet {
+            cp2YTF.addTarget(self, action: #selector(valueDidChange(_:)), for: .editingChanged)
+        }
+    }
+    
+    @IBOutlet weak var animationContainerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +44,10 @@ class CAMediaTimingFunctionBezierPathViewController: UIViewController {
         bezierPathView.shapeLayer.lineWidth = 4
         bezierPathView.shapeLayer.strokeColor = UIColor.red.cgColor
         bezierPathView.shapeLayer.fillColor = UIColor.clear.cgColor
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     override func viewDidLayoutSubviews() {
@@ -55,6 +82,10 @@ class CAMediaTimingFunctionBezierPathViewController: UIViewController {
         let timingFunction = mediaTimingFunction(from: sender.selectedSegmentIndex)
         let controlPoints = getControlPoint(by: timingFunction)
         bezierPathView.shapeLayer.path = bezierPath(from: controlPoints.0, controlPoint2: controlPoints.1)
+    }
+    
+    @IBAction func valueDidChange(_ sender: UITextField) {
+        
     }
 }
 

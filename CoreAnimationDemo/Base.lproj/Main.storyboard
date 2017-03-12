@@ -6,8 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -588,11 +586,11 @@
                                         <rect key="frame" x="0.0" y="1730" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZmM-PN-lH0" id="Yc4-Dg-fh9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="CAMediaTimingFunction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Z5-Ij-hh0">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="61"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="61.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -608,11 +606,11 @@
                                         <rect key="frame" x="0.0" y="1792" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cju-TV-Njj" id="FqW-Re-bHQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="CAMediaTimingFunction BezierPath" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sds-75-0zw">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="61"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="61.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -621,7 +619,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="JOJ-aI-9kF" kind="show" id="YQ5-DY-V9f"/>
+                                            <segue destination="aZq-g4-f6U" kind="show" id="YQ5-DY-V9f"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -846,58 +844,6 @@
             </objects>
             <point key="canvasLocation" x="942" y="-20"/>
         </scene>
-        <!--Media Timing Function Bezier Path View Controller-->
-        <scene sceneID="ezz-4I-4iU">
-            <objects>
-                <viewController id="JOJ-aI-9kF" customClass="CAMediaTimingFunctionBezierPathViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SSU-Kd-Gnq"/>
-                        <viewControllerLayoutGuide type="bottom" id="xfJ-PR-Up5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mCC-8m-v7n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZHd-Hj-DeP">
-                                <rect key="frame" x="24" y="619" width="327" height="29"/>
-                                <segments>
-                                    <segment title="Linear"/>
-                                    <segment title="EaseIn"/>
-                                    <segment title="EaseOut"/>
-                                    <segment title="EaseInEaseOut"/>
-                                    <segment title="Default"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentedControlValueDidChangeWithSender:" destination="JOJ-aI-9kF" eventType="valueChanged" id="t6S-Dc-4B3"/>
-                                </connections>
-                            </segmentedControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ImV-fF-Grs" customClass="BezierPathView" customModule="CoreAnimationDemo" customModuleProvider="target">
-                                <rect key="frame" x="24" y="170" width="327" height="327"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ImV-fF-Grs" secondAttribute="height" multiplier="1:1" id="ZJL-7D-0sc"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="xfJ-PR-Up5" firstAttribute="top" secondItem="ZHd-Hj-DeP" secondAttribute="bottom" constant="20" id="2AW-oO-UQA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ImV-fF-Grs" secondAttribute="trailing" constant="8" id="3QO-9B-jQy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZHd-Hj-DeP" secondAttribute="trailing" constant="8" id="7fT-yR-iC0"/>
-                            <constraint firstItem="ImV-fF-Grs" firstAttribute="centerY" secondItem="mCC-8m-v7n" secondAttribute="centerY" id="G9i-v4-6V6"/>
-                            <constraint firstItem="ImV-fF-Grs" firstAttribute="leading" secondItem="mCC-8m-v7n" secondAttribute="leadingMargin" constant="8" id="gb8-Xj-N1j"/>
-                            <constraint firstItem="ZHd-Hj-DeP" firstAttribute="leading" secondItem="mCC-8m-v7n" secondAttribute="leadingMargin" constant="8" id="uAd-IU-ci5"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="bezierPathView" destination="ImV-fF-Grs" id="eHd-xL-tLD"/>
-                        <outlet property="segmentedControl" destination="ZHd-Hj-DeP" id="9zs-Dh-YLs"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UHr-Ay-ETe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1385" y="-292"/>
-        </scene>
         <!--AnimationControl-->
         <scene sceneID="1Xd-DI-nnw">
             <objects>
@@ -913,6 +859,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ee-Ph-cgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1830" y="-21"/>
+        </scene>
+        <!--CAMediaTimingFunctionBezierPath-->
+        <scene sceneID="efd-k0-5Xe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CAMediaTimingFunctionBezierPath" id="aZq-g4-f6U" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uB4-KK-4oL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="-292"/>
         </scene>
     </scenes>
 </document>
