@@ -105,7 +105,7 @@ class CAMediaTimingFunctionViewController: UIViewController {
 
 }
 
-func mediaTimingFunction(from index: Int) -> CAMediaTimingFunction {
+func mediaTimingFunction(from index: Int) -> CAMediaTimingFunction? {
     var timingFunctionName: String
     switch index {
     case 0:
@@ -119,7 +119,7 @@ func mediaTimingFunction(from index: Int) -> CAMediaTimingFunction {
     case 4:
         timingFunctionName = kCAMediaTimingFunctionDefault
     default:
-        timingFunctionName = kCAMediaTimingFunctionLinear
+        return nil
     }
     return CAMediaTimingFunction(name: timingFunctionName)
 }

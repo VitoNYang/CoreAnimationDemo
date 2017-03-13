@@ -35,6 +35,13 @@ class CAMediaTimingFunctionBezierPathViewController: UIViewController {
     }
     
     @IBOutlet weak var animationContainerView: UIView!
+    lazy var animationLayer: CALayer = {
+        $0.backgroundColor = UIColor.randomColor.cgColor
+        $0.cornerRadius = 25
+        return $0
+    }(CALayer())
+    
+    var timingFunction: CAMediaTimingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +51,8 @@ class CAMediaTimingFunctionBezierPathViewController: UIViewController {
         bezierPathView.shapeLayer.lineWidth = 4
         bezierPathView.shapeLayer.strokeColor = UIColor.red.cgColor
         bezierPathView.shapeLayer.fillColor = UIColor.clear.cgColor
+        
+        animationContainerView.layer.addSublayer(animationLayer)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -52,9 +61,9 @@ class CAMediaTimingFunctionBezierPathViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        let timingFunction = mediaTimingFunction(from: segmentedControl.selectedSegmentIndex)
-        let controlPoints = getControlPoint(by: timingFunction)
-        bezierPathView.shapeLayer.path = bezierPath(from: controlPoints.0, controlPoint2: controlPoints.1)
+        setupBezierPathView()
+        animationLayer.bounds = CGRect(x: 0, y: 0, width: animationContainerView.bounds.height, height: animationContainerView.bounds.height)
+        animationLayer.position = CGPoint(x: animationLayer.bounds.width / 2, y: animationLayer.bounds.height / 2)
     }
     
     /// 根据控制点生成 bezier 曲线
@@ -78,14 +87,37 @@ class CAMediaTimingFunctionBezierPathViewController: UIViewController {
         return (point1, point2)
     }
     
-    @IBAction func segmentedControlValueDidChange(sender: UISegmentedControl) {
-        let timingFunction = mediaTimingFunction(from: sender.selectedSegmentIndex)
-        let controlPoints = getControlPoint(by: timingFunction)
+    /// 设置 bezier path view
+    private func setupBezierPathView() {
+        var timingFunction = mediaTimingFunction(from: segmentedControl.selectedSegmentIndex)
+        if timingFunction == nil {
+            timingFunction = CAMediaTimingFunction(controlPoints: cp1XTF.number, cp1YTF.number, cp2XTF.number, cp2YTF.number)
+        }
+        self.timingFunction = timingFunction!
+        let controlPoints = getControlPoint(by: timingFunction!)
         bezierPathView.shapeLayer.path = bezierPath(from: controlPoints.0, controlPoint2: controlPoints.1)
     }
     
+    @IBAction func segmentedControlValueDidChange(sender: UISegmentedControl) {
+        setupBezierPathView()
+    }
+    @IBAction func animationAction(_ sender: UIButton) {
+        let animation = CABasicAnimation()
+        animation.keyPath = "position"
+        animation.duration = 1
+        animation.timingFunction = timingFunction
+        animation.toValue = CGPoint(x: animationContainerView.bounds.width - animationContainerView.bounds.height / 2, y: animationLayer.bounds.height / 2)
+        animation.fillMode = kCAFillModeForwards
+        animation.isRemovedOnCompletion = false
+        animationLayer.add(animation, forKey: "positionAnimation")
+    }
+    
     @IBAction func valueDidChange(_ sender: UITextField) {
-        
+        // 如果没有选中 Custom 则不做处理
+        if segmentedControl.selectedSegmentIndex != segmentedControl.numberOfSegments - 1 {
+            return
+        }
+        setupBezierPathView()
     }
 }
 
@@ -96,5 +128,11 @@ class BezierPathView: UIView {
     
     var shapeLayer: CAShapeLayer {
         return layer as! CAShapeLayer
+    }
+}
+
+extension UITextField {
+    var number: Float {
+        return Float(text ?? "0") ?? 0
     }
 }
