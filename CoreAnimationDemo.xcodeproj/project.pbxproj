@@ -44,6 +44,8 @@
 		3FC648B21E4EF191009C73EB /* ContentRectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */; };
 		3FC648B51E4F162A009C73EB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B41E4F162A009C73EB /* Extension.swift */; };
 		3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B61E4F596B009C73EB /* AnchorViewController.swift */; };
+		3FCF8FF71E7676B8009BD98F /* KeyframeAnimationWithTimingFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF8FF61E7676B8009BD98F /* KeyframeAnimationWithTimingFunctionViewController.swift */; };
+		3FCF8FF91E76770D009BD98F /* KeyframeAnimationWithTimingFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCF8FF81E76770D009BD98F /* KeyframeAnimationWithTimingFunction.storyboard */; };
 		3FD073CB1E5C375700882E58 /* AVPlayerLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */; };
 		3FD073CF1E5C4EF300882E58 /* Missile.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3FD073CE1E5C4EF300882E58 /* Missile.mov */; };
 		3FDE31EF1E729EC300B06137 /* AnimationControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE31EE1E729EC300B06137 /* AnimationControlViewController.swift */; };
@@ -159,6 +161,8 @@
 		3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRectViewController.swift; sourceTree = "<group>"; };
 		3FC648B41E4F162A009C73EB /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		3FC648B61E4F596B009C73EB /* AnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
+		3FCF8FF61E7676B8009BD98F /* KeyframeAnimationWithTimingFunctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyframeAnimationWithTimingFunctionViewController.swift; sourceTree = "<group>"; };
+		3FCF8FF81E76770D009BD98F /* KeyframeAnimationWithTimingFunction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KeyframeAnimationWithTimingFunction.storyboard; sourceTree = "<group>"; };
 		3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerLayerViewController.swift; sourceTree = "<group>"; };
 		3FD073CE1E5C4EF300882E58 /* Missile.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Missile.mov; sourceTree = "<group>"; };
 		3FDE31EE1E729EC300B06137 /* AnimationControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationControlViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 		3F105F8B1E7538ED0098EF14 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				3FCF8FF81E76770D009BD98F /* KeyframeAnimationWithTimingFunction.storyboard */,
 				3F1D67F21E75AC7600F6E7C7 /* CAMediaTimingFunctionBezierPath.storyboard */,
 				3F105F871E751E3A0098EF14 /* CAMediaTimingFunction.storyboard */,
 				3FDE31F01E729EF900B06137 /* AnimationControl.storyboard */,
@@ -407,6 +412,7 @@
 				3FDE31EE1E729EC300B06137 /* AnimationControlViewController.swift */,
 				3F105F851E751DF70098EF14 /* CAMediaTimingFunctionViewController.swift */,
 				3F105F891E7536A30098EF14 /* CAMediaTimingFunctionBezierPathViewController.swift */,
+				3FCF8FF61E7676B8009BD98F /* KeyframeAnimationWithTimingFunctionViewController.swift */,
 			);
 			name = Animation;
 			sourceTree = "<group>";
@@ -597,6 +603,7 @@
 				3FE8486F1E5F3FED007BB042 /* 04_04_00.jpg in Resources */,
 				3FE330FF1E71B85700215A7F /* ThreeD.storyboard in Resources */,
 				3FE330F71E71B72600215A7F /* BaseLayer.storyboard in Resources */,
+				3FCF8FF91E76770D009BD98F /* KeyframeAnimationWithTimingFunction.storyboard in Resources */,
 				3FE848751E5F3FED007BB042 /* 04_05_02.jpg in Resources */,
 				3FE848661E5F3FED007BB042 /* 04_01_03.jpg in Resources */,
 			);
@@ -683,6 +690,7 @@
 				3F1B026D1E59FA91001DF094 /* CATiledLayerViewController.swift in Sources */,
 				3F57C98D1E71399600BDCD3F /* CAMediaTimingViewController.swift in Sources */,
 				3FF8957F1E5306150033AA31 /* HitTestViewController.swift in Sources */,
+				3FCF8FF71E7676B8009BD98F /* KeyframeAnimationWithTimingFunctionViewController.swift in Sources */,
 				3F1B025E1E59E404001DF094 /* VTScrollView.swift in Sources */,
 				3F7037FD1E56F84D00EC5065 /* CATransformLayerViewController.swift in Sources */,
 				3FC648B51E4F162A009C73EB /* Extension.swift in Sources */,
