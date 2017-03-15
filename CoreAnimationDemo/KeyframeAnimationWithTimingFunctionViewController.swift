@@ -44,7 +44,7 @@ class KeyframeAnimationWithTimingFunctionViewController: UIViewController {
         let numFrames = Int(duration * 60)
         var frames = [Any]()
         
-        for i in 0..<numFrames {
+        for i in 0 ..< numFrames {
             var time = 1 / CGFloat(numFrames) * CGFloat(i)
             time = bounceEaseOut(t: time)
             frames.append(interpolateFromValue(fromValue: fromValue, toValue: toValue, time: time))

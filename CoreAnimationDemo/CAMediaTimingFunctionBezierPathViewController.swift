@@ -130,9 +130,3 @@ class BezierPathView: UIView {
         return layer as! CAShapeLayer
     }
 }
-
-extension UITextField {
-    var number: Float {
-        return Float(text ?? "0") ?? 0
-    }
-}

@@ -30,3 +30,9 @@ extension UIView {
         return image
     }
 }
+
+extension UITextField {
+    var number: Float {
+        return Float(text ?? "0") ?? 0
+    }
+}
