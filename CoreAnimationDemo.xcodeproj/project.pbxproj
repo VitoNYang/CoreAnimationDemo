@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F09E3B41E7EF34C00D5D824 /* ColorBlendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F09E3B31E7EF34C00D5D824 /* ColorBlendedViewController.swift */; };
+		3F09E3B61E7EF3A000D5D824 /* ColorBlended.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F09E3B51E7EF3A000D5D824 /* ColorBlended.storyboard */; };
 		3F105F861E751DF70098EF14 /* CAMediaTimingFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F105F851E751DF70098EF14 /* CAMediaTimingFunctionViewController.swift */; };
 		3F105F881E751E3A0098EF14 /* CAMediaTimingFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F105F871E751E3A0098EF14 /* CAMediaTimingFunction.storyboard */; };
 		3F105F8A1E7536A30098EF14 /* CAMediaTimingFunctionBezierPathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F105F891E7536A30098EF14 /* CAMediaTimingFunctionBezierPathViewController.swift */; };
 		3F13A0951E4EDFBD00B1F8BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F13A0941E4EDFBD00B1F8BB /* AppDelegate.swift */; };
 		3F13A0971E4EDFBD00B1F8BB /* BaseLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F13A0961E4EDFBD00B1F8BB /* BaseLayerViewController.swift */; };
 		3F13A09C1E4EDFBD00B1F8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F13A09B1E4EDFBD00B1F8BB /* Assets.xcassets */; };
+		3F171E311E8019CF0082F769 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F171E301E8019CF0082F769 /* PerformanceViewController.swift */; };
+		3F171E331E801A490082F769 /* Performance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F171E321E801A490082F769 /* Performance.storyboard */; };
 		3F1B02581E59CDC1001DF094 /* VTGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B02571E59CDC1001DF094 /* VTGradientView.swift */; };
 		3F1B025A1E59D5D0001DF094 /* CAReplicatorLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B02591E59D5D0001DF094 /* CAReplicatorLayerViewController.swift */; };
 		3F1B025C1E59DA5F001DF094 /* VTReplicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B025B1E59DA5F001DF094 /* VTReplicatorView.swift */; };
@@ -119,6 +123,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F09E3B31E7EF34C00D5D824 /* ColorBlendedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBlendedViewController.swift; sourceTree = "<group>"; };
+		3F09E3B51E7EF3A000D5D824 /* ColorBlended.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ColorBlended.storyboard; sourceTree = "<group>"; };
 		3F105F851E751DF70098EF14 /* CAMediaTimingFunctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAMediaTimingFunctionViewController.swift; sourceTree = "<group>"; };
 		3F105F871E751E3A0098EF14 /* CAMediaTimingFunction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CAMediaTimingFunction.storyboard; sourceTree = "<group>"; };
 		3F105F891E7536A30098EF14 /* CAMediaTimingFunctionBezierPathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAMediaTimingFunctionBezierPathViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +135,8 @@
 		3F13A09B1E4EDFBD00B1F8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F13A09E1E4EDFBD00B1F8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F13A0A01E4EDFBD00B1F8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F171E301E8019CF0082F769 /* PerformanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
+		3F171E321E801A490082F769 /* Performance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Performance.storyboard; sourceTree = "<group>"; };
 		3F1B02571E59CDC1001DF094 /* VTGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTGradientView.swift; sourceTree = "<group>"; };
 		3F1B02591E59D5D0001DF094 /* CAReplicatorLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAReplicatorLayerViewController.swift; sourceTree = "<group>"; };
 		3F1B025B1E59DA5F001DF094 /* VTReplicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTReplicatorView.swift; sourceTree = "<group>"; };
@@ -245,6 +253,8 @@
 		3F105F8B1E7538ED0098EF14 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				3F171E321E801A490082F769 /* Performance.storyboard */,
+				3F09E3B51E7EF3A000D5D824 /* ColorBlended.storyboard */,
 				3FCF8FF81E76770D009BD98F /* KeyframeAnimationWithTimingFunction.storyboard */,
 				3F1D67F21E75AC7600F6E7C7 /* CAMediaTimingFunctionBezierPath.storyboard */,
 				3F105F871E751E3A0098EF14 /* CAMediaTimingFunction.storyboard */,
@@ -314,6 +324,7 @@
 		3F13A0A61E4EDFC900B1F8BB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3F171E2F1E8019A60082F769 /* Performance */,
 				3F6169F81E5EF20200FBE145 /* Basic */,
 				3F6169F91E5EF21900FBE145 /* Animation */,
 				3F84FEB61E6D1DB000C220EA /* Util */,
@@ -332,6 +343,14 @@
 				3F13A0A01E4EDFBD00B1F8BB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F171E2F1E8019A60082F769 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				3F171E301E8019CF0082F769 /* PerformanceViewController.swift */,
+			);
+			name = Performance;
 			sourceTree = "<group>";
 		};
 		3F1B02661E59EAFB001DF094 /* TileCutter */ = {
@@ -394,6 +413,7 @@
 				3FA434A41E5AD3E0004898F8 /* CAEmitterLayerViewController.swift */,
 				3FA434A61E5AE9F7004898F8 /* CAEAGLLayerViewController.swift */,
 				3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */,
+				3F09E3B31E7EF34C00D5D824 /* ColorBlendedViewController.swift */,
 			);
 			name = Basic;
 			sourceTree = "<group>";
@@ -585,7 +605,9 @@
 				3FE331191E71B9FB00215A7F /* Transition.storyboard in Resources */,
 				3FE331251E71BAC300215A7F /* Animation.storyboard in Resources */,
 				3F13A09C1E4EDFBD00B1F8BB /* Assets.xcassets in Resources */,
+				3F09E3B61E7EF3A000D5D824 /* ColorBlended.storyboard in Resources */,
 				3FE331031E71B8AC00215A7F /* Filter.storyboard in Resources */,
+				3F171E331E801A490082F769 /* Performance.storyboard in Resources */,
 				3FE848731E5F3FED007BB042 /* 04_05_00.jpg in Resources */,
 				3FE331131E71B9B300215A7F /* ReplicatorLayer.storyboard in Resources */,
 				3FE848641E5F3FED007BB042 /* 04_01_01.jpg in Resources */,
@@ -670,6 +692,7 @@
 				3F84FEB81E6D508000C220EA /* StopAnimationViewController.swift in Sources */,
 				3F13A0971E4EDFBD00B1F8BB /* BaseLayerViewController.swift in Sources */,
 				3FD073CB1E5C375700882E58 /* AVPlayerLayerViewController.swift in Sources */,
+				3F09E3B41E7EF34C00D5D824 /* ColorBlendedViewController.swift in Sources */,
 				3F84FEB11E6D081500C220EA /* CATransitionViewController.swift in Sources */,
 				3F86778A1E60413F0076F0AB /* CAKeyframeAnimationViewController.swift in Sources */,
 				3F7037FF1E5706DF00EC5065 /* CAGradientLayerViewController.swift in Sources */,
@@ -689,6 +712,7 @@
 				3F6169FB1E5EF24600FBE145 /* BaseAnimationViewController.swift in Sources */,
 				3F1B026D1E59FA91001DF094 /* CATiledLayerViewController.swift in Sources */,
 				3F57C98D1E71399600BDCD3F /* CAMediaTimingViewController.swift in Sources */,
+				3F171E311E8019CF0082F769 /* PerformanceViewController.swift in Sources */,
 				3FF8957F1E5306150033AA31 /* HitTestViewController.swift in Sources */,
 				3FCF8FF71E7676B8009BD98F /* KeyframeAnimationWithTimingFunctionViewController.swift in Sources */,
 				3F1B025E1E59E404001DF094 /* VTScrollView.swift in Sources */,

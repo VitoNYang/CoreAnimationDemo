@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="We5-2a-qYC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Performance View Controller-->
+        <scene sceneID="NZe-OC-ceq">
+            <objects>
+                <viewController id="We5-2a-qYC" customClass="PerformanceViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eo6-Gh-tW2"/>
+                        <viewControllerLayoutGuide type="bottom" id="EtN-kf-gdc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BGa-D5-ZNt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ouC-V6-P2U">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ouC-V6-P2U" firstAttribute="leading" secondItem="BGa-D5-ZNt" secondAttribute="leadingMargin" id="AuB-IY-aXF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ouC-V6-P2U" secondAttribute="trailing" id="VYL-d2-Han"/>
+                            <constraint firstItem="ouC-V6-P2U" firstAttribute="top" secondItem="eo6-Gh-tW2" secondAttribute="bottom" id="gXi-E1-22X"/>
+                            <constraint firstItem="EtN-kf-gdc" firstAttribute="top" secondItem="ouC-V6-P2U" secondAttribute="bottom" id="qKT-MY-7bS"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="ouC-V6-P2U" id="uzv-yT-lic"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6kx-ag-gir" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="329"/>
+        </scene>
+    </scenes>
+</document>

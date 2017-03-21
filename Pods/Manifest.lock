@@ -2,14 +2,17 @@ PODS:
   - FBRetainCycleDetector (0.1.3)
   - MLeaksFinder (0.2.1):
     - FBRetainCycleDetector
+  - VitoFPSTrack (0.1)
 
 DEPENDENCIES:
   - MLeaksFinder
+  - VitoFPSTrack
 
 SPEC CHECKSUMS:
   FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
-  MLeaksFinder: 0850e2f2abc7227adc4d4e2d1992b431264eb4d5
+  MLeaksFinder: '0850e2f2abc7227adc4d4e2d1992b431264eb4d5'
+  VitoFPSTrack: cd4f0a2498eec664287ddb37c748aac04adf0377
 
-PODFILE CHECKSUM: b81c6575268918d1547aa93d1ac37f8c05d3fd78
+PODFILE CHECKSUM: 2aace99379be290e1117578917181558693c8dd9
 
 COCOAPODS: 1.1.1

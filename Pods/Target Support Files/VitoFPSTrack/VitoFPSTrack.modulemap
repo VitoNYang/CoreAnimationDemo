@@ -1,0 +1,6 @@
+framework module VitoFPSTrack {
+  umbrella header "VitoFPSTrack-umbrella.h"
+
+  export *
+  module * { export * }
+}
