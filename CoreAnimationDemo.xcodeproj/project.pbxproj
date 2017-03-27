@@ -45,6 +45,9 @@
 		3F86778A1E60413F0076F0AB /* CAKeyframeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8677891E60413F0076F0AB /* CAKeyframeAnimationViewController.swift */; };
 		3FA434A51E5AD3E0004898F8 /* CAEmitterLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA434A41E5AD3E0004898F8 /* CAEmitterLayerViewController.swift */; };
 		3FA434A71E5AE9F7004898F8 /* CAEAGLLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA434A61E5AE9F7004898F8 /* CAEAGLLayerViewController.swift */; };
+		3FAD71CD1E890FCD00036600 /* VitoDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD71CC1E890FCD00036600 /* VitoDrawView.swift */; };
+		3FAD71CF1E89115500036600 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD71CE1E89115500036600 /* DrawViewController.swift */; };
+		3FAD71D11E8911D400036600 /* Draw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD71D01E8911D400036600 /* Draw.storyboard */; };
 		3FC648B21E4EF191009C73EB /* ContentRectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */; };
 		3FC648B51E4F162A009C73EB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B41E4F162A009C73EB /* Extension.swift */; };
 		3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B61E4F596B009C73EB /* AnchorViewController.swift */; };
@@ -166,6 +169,9 @@
 		3F8677891E60413F0076F0AB /* CAKeyframeAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAKeyframeAnimationViewController.swift; sourceTree = "<group>"; };
 		3FA434A41E5AD3E0004898F8 /* CAEmitterLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAEmitterLayerViewController.swift; sourceTree = "<group>"; };
 		3FA434A61E5AE9F7004898F8 /* CAEAGLLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAEAGLLayerViewController.swift; sourceTree = "<group>"; };
+		3FAD71CC1E890FCD00036600 /* VitoDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VitoDrawView.swift; sourceTree = "<group>"; };
+		3FAD71CE1E89115500036600 /* DrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		3FAD71D01E8911D400036600 /* Draw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Draw.storyboard; sourceTree = "<group>"; };
 		3FC648B11E4EF191009C73EB /* ContentRectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRectViewController.swift; sourceTree = "<group>"; };
 		3FC648B41E4F162A009C73EB /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		3FC648B61E4F596B009C73EB /* AnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
@@ -253,6 +259,7 @@
 		3F105F8B1E7538ED0098EF14 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				3FAD71D01E8911D400036600 /* Draw.storyboard */,
 				3F171E321E801A490082F769 /* Performance.storyboard */,
 				3F09E3B51E7EF3A000D5D824 /* ColorBlended.storyboard */,
 				3FCF8FF81E76770D009BD98F /* KeyframeAnimationWithTimingFunction.storyboard */,
@@ -349,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				3F171E301E8019CF0082F769 /* PerformanceViewController.swift */,
+				3FAD71CE1E89115500036600 /* DrawViewController.swift */,
 			);
 			name = Performance;
 			sourceTree = "<group>";
@@ -445,6 +453,7 @@
 				3F1B02571E59CDC1001DF094 /* VTGradientView.swift */,
 				3F1B025B1E59DA5F001DF094 /* VTReplicatorView.swift */,
 				3F1B025D1E59E403001DF094 /* VTScrollView.swift */,
+				3FAD71CC1E890FCD00036600 /* VitoDrawView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -626,6 +635,7 @@
 				3FE330FF1E71B85700215A7F /* ThreeD.storyboard in Resources */,
 				3FE330F71E71B72600215A7F /* BaseLayer.storyboard in Resources */,
 				3FCF8FF91E76770D009BD98F /* KeyframeAnimationWithTimingFunction.storyboard in Resources */,
+				3FAD71D11E8911D400036600 /* Draw.storyboard in Resources */,
 				3FE848751E5F3FED007BB042 /* 04_05_02.jpg in Resources */,
 				3FE848661E5F3FED007BB042 /* 04_01_03.jpg in Resources */,
 			);
@@ -691,6 +701,7 @@
 				3F1B02581E59CDC1001DF094 /* VTGradientView.swift in Sources */,
 				3F84FEB81E6D508000C220EA /* StopAnimationViewController.swift in Sources */,
 				3F13A0971E4EDFBD00B1F8BB /* BaseLayerViewController.swift in Sources */,
+				3FAD71CF1E89115500036600 /* DrawViewController.swift in Sources */,
 				3FD073CB1E5C375700882E58 /* AVPlayerLayerViewController.swift in Sources */,
 				3F09E3B41E7EF34C00D5D824 /* ColorBlendedViewController.swift in Sources */,
 				3F84FEB11E6D081500C220EA /* CATransitionViewController.swift in Sources */,
@@ -710,6 +721,7 @@
 				3FDE31EF1E729EC300B06137 /* AnimationControlViewController.swift in Sources */,
 				3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */,
 				3F6169FB1E5EF24600FBE145 /* BaseAnimationViewController.swift in Sources */,
+				3FAD71CD1E890FCD00036600 /* VitoDrawView.swift in Sources */,
 				3F1B026D1E59FA91001DF094 /* CATiledLayerViewController.swift in Sources */,
 				3F57C98D1E71399600BDCD3F /* CAMediaTimingViewController.swift in Sources */,
 				3F171E311E8019CF0082F769 /* PerformanceViewController.swift in Sources */,
