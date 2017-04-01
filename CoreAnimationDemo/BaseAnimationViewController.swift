@@ -74,10 +74,10 @@ class BaseAnimationViewController: UIViewController {
         
         // 可验证当属性在动画block 之外，UIView直接返回nil 来禁止动画
         // 如果在block 之内，根据动画具体类型返回对应的属性
-        print("Outside > \(animationView.layer.action(forKey: "backgroundColor"))")
+        print("Outside > \(String(describing: animationView.layer.action(forKey: "backgroundColor")))")
         // 开始动画
         UIView.beginAnimations(nil, context: nil)
-        print("Inside > \(animationView.layer.action(forKey: "backgroundColor"))")
+        print("Inside > \(String(describing: animationView.layer.action(forKey: "backgroundColor")))")
         // 提交动画
         UIView.commitAnimations()
 

@@ -53,6 +53,8 @@
 		3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC648B61E4F596B009C73EB /* AnchorViewController.swift */; };
 		3FCF8FF71E7676B8009BD98F /* KeyframeAnimationWithTimingFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF8FF61E7676B8009BD98F /* KeyframeAnimationWithTimingFunctionViewController.swift */; };
 		3FCF8FF91E76770D009BD98F /* KeyframeAnimationWithTimingFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCF8FF81E76770D009BD98F /* KeyframeAnimationWithTimingFunction.storyboard */; };
+		3FD06AA11E8A5E9300BF00FE /* ThreeDLayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD06AA01E8A5E9300BF00FE /* ThreeDLayersViewController.swift */; };
+		3FD06AA31E8A5EE900BF00FE /* ThreeDLayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD06AA21E8A5EE900BF00FE /* ThreeDLayers.storyboard */; };
 		3FD073CB1E5C375700882E58 /* AVPlayerLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */; };
 		3FD073CF1E5C4EF300882E58 /* Missile.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3FD073CE1E5C4EF300882E58 /* Missile.mov */; };
 		3FDE31EF1E729EC300B06137 /* AnimationControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE31EE1E729EC300B06137 /* AnimationControlViewController.swift */; };
@@ -177,6 +179,8 @@
 		3FC648B61E4F596B009C73EB /* AnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
 		3FCF8FF61E7676B8009BD98F /* KeyframeAnimationWithTimingFunctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyframeAnimationWithTimingFunctionViewController.swift; sourceTree = "<group>"; };
 		3FCF8FF81E76770D009BD98F /* KeyframeAnimationWithTimingFunction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KeyframeAnimationWithTimingFunction.storyboard; sourceTree = "<group>"; };
+		3FD06AA01E8A5E9300BF00FE /* ThreeDLayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeDLayersViewController.swift; sourceTree = "<group>"; };
+		3FD06AA21E8A5EE900BF00FE /* ThreeDLayers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThreeDLayers.storyboard; sourceTree = "<group>"; };
 		3FD073CA1E5C375700882E58 /* AVPlayerLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerLayerViewController.swift; sourceTree = "<group>"; };
 		3FD073CE1E5C4EF300882E58 /* Missile.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Missile.mov; sourceTree = "<group>"; };
 		3FDE31EE1E729EC300B06137 /* AnimationControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationControlViewController.swift; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 		3F105F8B1E7538ED0098EF14 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				3FD06AA21E8A5EE900BF00FE /* ThreeDLayers.storyboard */,
 				3FAD71D01E8911D400036600 /* Draw.storyboard */,
 				3F171E321E801A490082F769 /* Performance.storyboard */,
 				3F09E3B51E7EF3A000D5D824 /* ColorBlended.storyboard */,
@@ -357,6 +362,7 @@
 			children = (
 				3F171E301E8019CF0082F769 /* PerformanceViewController.swift */,
 				3FAD71CE1E89115500036600 /* DrawViewController.swift */,
+				3FD06AA01E8A5E9300BF00FE /* ThreeDLayersViewController.swift */,
 			);
 			name = Performance;
 			sourceTree = "<group>";
@@ -538,7 +544,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Vito;
 				TargetAttributes = {
 					3F13A0901E4EDFBD00B1F8BB = {
@@ -605,6 +611,7 @@
 				3FE330FD1E71B83200215A7F /* HitTest.storyboard in Resources */,
 				3FE848701E5F3FED007BB042 /* 04_04_01.jpg in Resources */,
 				3FE848631E5F3FED007BB042 /* 04_01_00.jpg in Resources */,
+				3FD06AA31E8A5EE900BF00FE /* ThreeDLayers.storyboard in Resources */,
 				3FE8486E1E5F3FED007BB042 /* 04_03_03.jpg in Resources */,
 				3FE848691E5F3FED007BB042 /* 04_02_02.jpg in Resources */,
 				3FE848761E5F3FED007BB042 /* 04_05_03.jpg in Resources */,
@@ -720,6 +727,7 @@
 				3F13A0951E4EDFBD00B1F8BB /* AppDelegate.swift in Sources */,
 				3FDE31EF1E729EC300B06137 /* AnimationControlViewController.swift in Sources */,
 				3FC648B71E4F596B009C73EB /* AnchorViewController.swift in Sources */,
+				3FD06AA11E8A5E9300BF00FE /* ThreeDLayersViewController.swift in Sources */,
 				3F6169FB1E5EF24600FBE145 /* BaseAnimationViewController.swift in Sources */,
 				3FAD71CD1E890FCD00036600 /* VitoDrawView.swift in Sources */,
 				3F1B026D1E59FA91001DF094 /* CATiledLayerViewController.swift in Sources */,
@@ -867,6 +875,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E636744F0BA5CE3415E8516D /* Pods-CoreAnimationDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7QWPB348SW;
 				INFOPLIST_FILE = CoreAnimationDemo/Info.plist;
@@ -881,6 +890,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DC3496FE6C7F823E16379E9 /* Pods-CoreAnimationDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7QWPB348SW;
 				INFOPLIST_FILE = CoreAnimationDemo/Info.plist;

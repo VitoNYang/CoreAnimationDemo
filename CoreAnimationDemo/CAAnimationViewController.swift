@@ -71,9 +71,9 @@ class CAAnimationViewController: UIViewController {
 
 extension CAAnimationViewController: CAAnimationDelegate {
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        guard let baseAnimation = anim as? CABasicAnimation else {
-            return
-        }
+//        guard let baseAnimation = anim as? CABasicAnimation else {
+//            return
+//        }
 //        print("animationDidStop")
 //        CATransaction.begin()
 //        CATransaction.setDisableActions(true)

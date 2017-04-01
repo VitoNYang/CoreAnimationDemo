@@ -24,3 +24,13 @@ extension UIColor {
         return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
     }
 }
+
+extension Int {
+    var float: Float {
+        return Float(self)
+    }
+    
+    var cgFloat: CGFloat {
+        return CGFloat(self)
+    }
+}
